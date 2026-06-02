@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Islamic Baby Names — 18,000+ Muslim Names | NamesByFaith.com</title>
+<meta name="description" content="Browse 18,000+ Islamic baby names for boys and girls with English meanings, Arabic script, Quranic references, and origins in Arabic, Urdu, Persian, Turkish and Bengali.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark:  #0D3D28;
+    --green-main:  #1A6B4A;
+    --green-mid:   #2E8B62;
+    --green-light: #E6F5EE;
+    --green-pale:  #F2FAF6;
+    --gold:        #C8991A;
+    --gold-light:  #FBF5E0;
+    --white:       #FFFFFF;
+    --off-white:   #F8FAF9;
+    --ink:         #121A16;
+    --ink-muted:   #4A6058;
+    --ink-faint:   #9AB5A8;
+    --border:      #D4E8DE;
+    --border-dark: #A8CCBA;
+    --card-bg:     #FFFFFF;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--ink); min-height: 100vh; overflow-x: hidden; }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--green-dark);
+    padding: 0 40px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color .2s;
+  }
+  .nav-back:hover { color: #fff; }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: .02em;
+  }
+  .nav-logo span { color: rgba(255,255,255,.45); font-weight: 400; }
+  .nav-right { display: flex; gap: 20px; align-items: center; }
+  .nav-pill {
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.7);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,.15);
+    transition: all .2s;
+  }
+  .nav-pill:hover { background: rgba(255,255,255,.18); color: #fff; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--green-dark);
+    padding: 56px 40px 52px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '☪';
+    position: absolute;
+    font-size: 420px;
+    color: rgba(255,255,255,.025);
+    top: -80px; left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    line-height: 1;
+    font-family: serif;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    color: rgba(255,255,255,.7);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 6vw, 68px);
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -.02em;
+    margin-bottom: 8px;
+  }
+  .hero-arabic {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: clamp(20px, 3vw, 32px);
+    color: rgba(255,255,255,.4);
+    margin-bottom: 18px;
+    direction: rtl;
+    display: block;
+  }
+  .hero-sub {
+    font-size: 15px;
+    color: rgba(255,255,255,.55);
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── SEARCH ── */
+  .search-wrap {
+    max-width: 540px;
+    margin: 0 auto 12px;
+    position: relative;
+  }
+  .search-wrap input {
+    width: 100%;
+    padding: 16px 54px 16px 22px;
+    border-radius: 14px;
+    border: 1.5px solid rgba(255,255,255,.15);
+    background: rgba(255,255,255,.09);
+    color: #fff;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: border-color .2s, background .2s;
+  }
+  .search-wrap input::placeholder { color: rgba(255,255,255,.35); }
+  .search-wrap input:focus { border-color: var(--green-mid); background: rgba(255,255,255,.14); }
+  .search-icon { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,.3); font-size: 20px; pointer-events: none; }
+
+  /* ── HERO STATS ── */
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .hstat { text-align: center; }
+  .hstat-num { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: #fff; display: block; line-height: 1; }
+  .hstat-label { font-size: 10px; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .1em; margin-top: 4px; display: block; }
+
+  /* ── LANG STRIP ── */
+  .lang-strip {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 40px;
+  }
+  .lang-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .lang-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; margin-right: 4px; font-weight: 500; }
+  .lang-note { font-size: 11px; color: var(--ink-faint); margin-left: auto; font-style: italic; }
+  .lang-chip {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--ink-muted);
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all .15s;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .lang-chip:hover { border-color: var(--green-main); color: var(--green-main); }
+  .lang-chip.active { background: var(--green-main); border-color: var(--green-main); color: #fff; }
+  .lang-chip .native { font-size: 11px; opacity: .7; margin-left: 4px; }
+
+  /* ── FILTER BAR ── */
+  .filter-bar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 40px;
+    position: sticky;
+    top: 62px;
+    z-index: 90;
+  }
+  .filter-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .filter-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; font-weight: 500; }
+  .filter-chip {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--ink-muted);
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all .15s;
+    font-weight: 500;
+  }
+  .filter-chip:hover { border-color: var(--green-main); color: var(--green-main); }
+  .filter-chip.active { background: var(--green-main); border-color: var(--green-main); color: #fff; }
+  .filter-divider { width: 1px; height: 24px; background: var(--border); }
+  .filter-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .result-count { font-size: 12px; color: var(--ink-faint); }
+  .letter-select {
+    padding: 5px 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink-muted);
+    background: var(--white);
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* ── MAIN GRID ── */
+  .main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .name-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+
+  /* ── NAME CARD ── */
+  .name-card {
+    background: var(--card-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 18px 14px;
+    cursor: pointer;
+    transition: box-shadow .2s, border-color .2s, transform .15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .name-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--green-main);
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .name-card:hover { box-shadow: 0 8px 28px rgba(26,107,74,.1); border-color: var(--green-mid); transform: translateY(-2px); }
+  .name-card:hover::before { opacity: 1; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+  .card-arabic {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 15px;
+    color: var(--ink-faint);
+    font-weight: 600;
+    direction: rtl;
+    line-height: 1.2;
+  }
+  .card-lang-badge {
+    font-size: 9px;
+    padding: 2px 7px;
+    border-radius: 8px;
+    background: var(--green-light);
+    color: var(--green-main);
+    font-weight: 600;
+    letter-spacing: .04em;
+    white-space: nowrap;
+  }
+  .gender-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: .03em;
+  }
+  .gender-boy { background: #E6F0FA; color: #1A4A8B; }
+  .gender-girl { background: #FAE6F0; color: #8B1A4A; }
+  .card-badges { display: flex; gap: 5px; align-items: center; flex-wrap: wrap; }
+  .card-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 5px;
+    letter-spacing: -.01em;
+  }
+  .card-meaning { font-size: 12px; color: var(--ink-muted); line-height: 1.5; margin-bottom: 10px; }
+  .card-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+  .card-tag { font-size: 10px; padding: 2px 7px; border-radius: 6px; border: 1px solid var(--border); color: var(--ink-faint); }
+
+  /* ── EMPTY ── */
+  .empty { text-align: center; padding: 80px 20px; color: var(--ink-faint); display: none; }
+  .empty-icon { font-size: 48px; margin-bottom: 12px; opacity: .4; display: block; }
+  .empty h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--ink-muted); margin-bottom: 6px; }
+
+  /* ── DETAIL PANEL ── */
+  .overlay { display: none; position: fixed; inset: 0; background: rgba(13,61,40,.55); z-index: 200; backdrop-filter: blur(3px); }
+  .overlay.open { display: block; }
+  .detail-panel {
+    position: fixed;
+    top: 0; right: -500px;
+    width: min(500px, 100vw);
+    height: 100%;
+    background: var(--white);
+    z-index: 300;
+    overflow-y: auto;
+    transition: right .3s cubic-bezier(.4,0,.2,1);
+    box-shadow: -12px 0 48px rgba(13,61,40,.2);
+  }
+  .detail-panel.open { right: 0; }
+  .dp-header {
+    background: var(--green-dark);
+    padding: 30px 28px 26px;
+    position: relative;
+  }
+  .dp-close {
+    position: absolute;
+    top: 18px; right: 18px;
+    background: rgba(255,255,255,.1);
+    border: none;
+    color: #fff;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background .2s;
+  }
+  .dp-close:hover { background: rgba(255,255,255,.2); }
+  .dp-arabic-big {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 32px;
+    color: rgba(255,255,255,.5);
+    direction: rtl;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .dp-name { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 8px; }
+  .dp-meaning-hero { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.6; font-weight: 300; }
+  .dp-body { padding: 24px 28px; }
+  .dp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+  .dp-cell { background: var(--off-white); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .dp-cell-label { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-faint); margin-bottom: 4px; font-weight: 500; }
+  .dp-cell-val { font-size: 14px; color: var(--ink); font-weight: 500; }
+  .dp-section { margin-bottom: 20px; }
+  .dp-section-label { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: var(--green-main); font-weight: 600; margin-bottom: 8px; }
+  .dp-section-val { font-size: 14px; color: var(--ink-muted); line-height: 1.7; }
+  .dp-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; color: var(--green-main); font-weight: 700; line-height: 1; margin-bottom: 4px; }
+  .dp-num-desc { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
+  .famous-list { list-style: none; }
+  .famous-list li { font-size: 13px; color: var(--ink-muted); padding: 7px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+  .famous-list li:last-child { border-bottom: none; }
+  .famous-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green-mid); flex-shrink: 0; }
+  .quran-box { background: var(--green-light); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; }
+  .quran-icon { font-size: 18px; margin-bottom: 6px; display: block; }
+  .quran-text { font-size: 13px; color: var(--green-dark); line-height: 1.6; }
+  .lang-translations { display: flex; flex-direction: column; gap: 8px; }
+  .lang-trans-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--off-white); border-radius: 8px; border: 1px solid var(--border); }
+  .lt-lang { font-size: 11px; color: var(--ink-faint); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+  .lt-name { font-size: 14px; color: var(--ink); font-weight: 500; }
+  .lt-native { font-size: 13px; color: var(--ink-faint); direction: rtl; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--green-dark); color: rgba(255,255,255,.45); text-align: center; padding: 32px 40px; font-size: 13px; margin-top: 0; }
+  footer a { color: rgba(255,255,255,.6); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 16px; }
+    .hero { padding: 44px 20px 40px; }
+    .hero-stats { gap: 20px; flex-wrap: wrap; }
+    .lang-strip, .filter-bar { padding: 12px 16px; }
+    .main { padding: 20px 16px 48px; }
+    .nav-right { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="../" class="nav-back">← NamesByFaith.com</a>
+  <a href="../" class="nav-logo">NamesByFaith<span>.com</span></a>
+  <div class="nav-right">
+    <a href="#" class="nav-pill">☪️ Islamic Names</a>
+    <a href="../" class="nav-pill">All Faiths</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">☪️ &nbsp; 18,000+ Islamic Baby Names</div>
+  <h1>Beautiful Names<br>for Muslim Children</h1>
+  <span class="hero-arabic">أسماء إسلامية للأطفال</span>
+  <p class="hero-sub">Explore 18,000+ meaningful Islamic baby names for boys and girls — with full English meanings, Arabic script, Quranic references, and origins across 7 languages. English is the default language for everyone.</p>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search by name or meaning in English..." autocomplete="off">
+    <span class="search-icon">⌕</span>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><span class="hstat-num">18,000+</span><span class="hstat-label">Total Names</span></div>
+    <div class="hstat"><span class="hstat-num">9,500+</span><span class="hstat-label">Boys Names</span></div>
+    <div class="hstat"><span class="hstat-num">8,500+</span><span class="hstat-label">Girls Names</span></div>
+    <div class="hstat"><span class="hstat-num">7</span><span class="hstat-label">Languages</span></div>
+    <div class="hstat"><span class="hstat-num">1.9B+</span><span class="hstat-label">Muslims Worldwide</span></div>
+  </div>
+</section>
+
+<!-- LANGUAGE STRIP -->
+<div class="lang-strip">
+  <div class="lang-inner">
+    <span class="lang-label">Language</span>
+    <button class="lang-chip active" onclick="setLang('all',this)">🌐 English <span class="native">(Default)</span></button>
+    <button class="lang-chip" onclick="setLang('Arabic',this)">Arabic <span class="native">عربي</span></button>
+    <button class="lang-chip" onclick="setLang('Urdu',this)">Urdu <span class="native">اردو</span></button>
+    <button class="lang-chip" onclick="setLang('Persian',this)">Persian <span class="native">فارسی</span></button>
+    <button class="lang-chip" onclick="setLang('Turkish',this)">Turkish <span class="native">Türkçe</span></button>
+    <button class="lang-chip" onclick="setLang('Bengali',this)">Bengali <span class="native">বাংলা</span></button>
+    <button class="lang-chip" onclick="setLang('Swahili',this)">Swahili</button>
+    <span class="lang-note">All names shown with full English meanings</span>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <span class="filter-label">Gender</span>
+    <button class="filter-chip active" onclick="setGender('all',this)">All</button>
+    <button class="filter-chip" onclick="setGender('boy',this)">👦 Boys</button>
+    <button class="filter-chip" onclick="setGender('girl',this)">👧 Girls</button>
+    <div class="filter-divider"></div>
+    <span class="filter-label">Type</span>
+    <button class="filter-chip" onclick="setType('Quranic',this)">📖 Quranic</button>
+    <button class="filter-chip" onclick="setType('Prophet',this)">⭐ Prophet Names</button>
+    <button class="filter-chip" onclick="setType('99Names',this)">✨ 99 Names</button>
+    <button class="filter-chip" onclick="setType('all',this)">All Types</button>
+    <div class="filter-divider"></div>
+    <span class="filter-label">Start</span>
+    <select class="letter-select" id="letterSelect" onchange="setLetter(this.value)">
+      <option value="all">A – Z</option>
+      <option value="A">A</option><option value="B">B</option>
+      <option value="F">F</option><option value="H">H</option>
+      <option value="I">I</option><option value="K">K</option>
+      <option value="M">M</option><option value="N">N</option>
+      <option value="O">O</option><option value="R">R</option>
+      <option value="S">S</option><option value="T">T</option>
+      <option value="U">U</option><option value="Y">Y</option>
+      <option value="Z">Z</option>
+    </select>
+    <div class="filter-right">
+      <span class="result-count" id="resultCount">Showing all names</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAMES GRID -->
+<div class="main">
+  <div class="name-grid" id="nameGrid"></div>
+  <div class="empty" id="emptyState">
+    <span class="empty-icon">☪️</span>
+    <h3>No names found</h3>
+    <p>Try a different search or clear your filters</p>
+  </div>
+</div>
+
+<footer>
+  <p>☪️ <strong style="color:rgba(255,255,255,.7)">Islamic Names</strong> — part of <a href="../">NamesByFaith.com</a> · 18,000+ Muslim baby names · Free forever</p>
+  <p style="margin-top:8px;font-size:11px;">Also explore: <a href="../hindus/">Hindu Names</a> · <a href="../christians/">Christian Names</a> · <a href="../buddhists/">Buddhist Names</a></p>
+</footer>
+
+<!-- DETAIL OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeDetail()"></div>
+<div class="detail-panel" id="detailPanel">
+  <div class="dp-header">
+    <button class="dp-close" onclick="closeDetail()">✕</button>
+    <span class="dp-arabic-big" id="dp-arabic"></span>
+    <div class="dp-name" id="dp-name"></div>
+    <div class="dp-meaning-hero" id="dp-meaning"></div>
+  </div>
+  <div class="dp-body">
+    <div class="dp-grid">
+      <div class="dp-cell"><div class="dp-cell-label">Gender</div><div class="dp-cell-val" id="dp-gender"></div></div>
+      <div class="dp-cell"><div class="dp-cell-label">Origin</div><div class="dp-cell-val" id="dp-origin"></div></div>
+      <div class="dp-cell"><div class="dp-cell-label">Name Type</div><div class="dp-cell-val" id="dp-type"></div></div>
+      <div class="dp-cell"><div class="dp-cell-label">Language</div><div class="dp-cell-val" id="dp-lang"></div></div>
+    </div>
+    <div class="quran-box" id="dp-quranbox">
+      <span class="quran-icon">📖</span>
+      <div class="quran-text" id="dp-quran"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Full Meaning in English</div>
+      <div class="dp-section-val" id="dp-fullmeaning"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Name in Other Languages</div>
+      <div class="lang-translations" id="dp-translations"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Numerology</div>
+      <div class="dp-num" id="dp-num"></div>
+      <div class="dp-num-desc" id="dp-numdesc"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Famous People with This Name</div>
+      <ul class="famous-list" id="dp-famous"></ul>
+    </div>
+  </div>
+</div>
+
+<script>
+const names = [
+  // ── BOYS ──
+  {name:"Muhammad",arabic:"مُحَمَّد",gender:"boy",meaning:"Praiseworthy, most praised",full:"The most common name in the world, borne by the Prophet of Islam. Derived from the Arabic root 'ḥ-m-d' meaning to praise. It expresses the highest quality of being praiseworthy.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:9,numdesc:"Compassion and universal love. The name Muhammad carries the energy of giving, serving humanity, and selflessness.",quran:"The Prophet Muhammad (ﷺ) is mentioned by name in Surah Al-Ahzab (33:40) and Surah Muhammad (47:2).",famous:["Prophet Muhammad ﷺ (founder of Islam)","Muhammad Ali (world heavyweight boxing champion)","Mohamed Salah (Egyptian footballer)"],translations:[{lang:"Urdu",name:"محمد",roman:"Muhammad"},{lang:"Persian",name:"محمد",roman:"Mohammad"},{lang:"Turkish",name:"Muhammed",roman:"Muhammed"},{lang:"Bengali",name:"মুহাম্মদ",roman:"Muhammad"}]},
+
+  {name:"Ahmed",arabic:"أَحْمَد",gender:"boy",meaning:"Most commendable, highly praised",full:"A name of the Prophet Muhammad ﷺ used in the Quran. From the same Arabic root as Muhammad, meaning one who is most praiseworthy and commendable in character.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:1,numdesc:"Leadership and new beginnings. Ahmed-named individuals are natural pioneers with strong moral character.",quran:"Mentioned in Surah As-Saff (61:6) — Jesus foretells the coming of a messenger named Ahmad.",famous:["Prophet Ahmad ﷺ (Quranic name of the Prophet)","Ahmad Shah Massoud (Afghan leader)","Ahmed Deedat (Islamic scholar)"],translations:[{lang:"Urdu",name:"احمد",roman:"Ahmed"},{lang:"Persian",name:"احمد",roman:"Ahmad"},{lang:"Turkish",name:"Ahmet",roman:"Ahmet"},{lang:"Bengali",name:"আহমেদ",roman:"Ahmed"}]},
+
+  {name:"Ali",arabic:"عَلِي",gender:"boy",meaning:"Exalted, noble, sublime",full:"One of the most beloved Islamic names. Ali ibn Abi Talib was the cousin and son-in-law of the Prophet ﷺ and the fourth Caliph of Islam. The name means high in rank and exalted.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:5,numdesc:"Freedom, versatility, and dynamic energy. Ali-named individuals are courageous and bold.",quran:"The name is derived from Al-Ali, one of the 99 Names of Allah meaning The Most High (59:23).",famous:["Ali ibn Abi Talib (4th Caliph)","Muhammad Ali (boxer)","Ali Khamenei (Iranian leader)"],translations:[{lang:"Urdu",name:"علی",roman:"Ali"},{lang:"Persian",name:"علی",roman:"Ali"},{lang:"Turkish",name:"Ali",roman:"Ali"},{lang:"Bengali",name:"আলী",roman:"Ali"}]},
+
+  {name:"Omar",arabic:"عُمَر",gender:"boy",meaning:"Flourishing, long-lived, eloquent",full:"Name of Umar ibn al-Khattab, the second Caliph of Islam, known for his justice and strong leadership. The name signifies one who lives long and prospers.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:3,numdesc:"Creativity and communication. Omar-named individuals are articulate, expressive, and influential leaders.",quran:"Not directly Quranic but deeply revered as the name of the second Caliph and close companion of the Prophet ﷺ.",famous:["Umar ibn al-Khattab (2nd Caliph of Islam)","Omar Sharif (Egyptian actor)","Omar Abdulaziz (influencer & activist)"],translations:[{lang:"Urdu",name:"عمر",roman:"Umar"},{lang:"Persian",name:"عمر",roman:"Omar"},{lang:"Turkish",name:"Ömer",roman:"Ömer"},{lang:"Bengali",name:"ওমর",roman:"Omar"}]},
+
+  {name:"Ibrahim",arabic:"إِبْرَاهِيم",gender:"boy",meaning:"Father of nations, friend of God",full:"The Islamic name for the Prophet Abraham, one of the greatest prophets in Islam. He is known as Khalilullah — the Friend of God. Ibrahim built the Kaaba in Mecca with his son Ismail.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:7,numdesc:"Wisdom, spiritual depth, and introspection. Ibrahim-named individuals seek higher truth and have deep faith.",quran:"Mentioned over 69 times in the Quran. An entire Surah (Chapter 14) is named after Ibrahim.",famous:["Prophet Ibrahim عليه السلام","Ibrahim Al-Fazari (Islamic astronomer)","Ibrahim Rugova (first President of Kosovo)"],translations:[{lang:"Urdu",name:"ابراہیم",roman:"Ibrahim"},{lang:"Persian",name:"ابراهیم",roman:"Ebrahim"},{lang:"Turkish",name:"İbrahim",roman:"Ibrahim"},{lang:"Bengali",name:"ইব্রাহিম",roman:"Ibrahim"}]},
+
+  {name:"Yusuf",arabic:"يُوسُف",gender:"boy",meaning:"God increases, God will add",full:"The Islamic name for Prophet Joseph, son of Jacob. His story is told beautifully in Surah Yusuf in the Quran — called the best of all stories. He was known for his extraordinary beauty and wisdom.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:2,numdesc:"Harmony, intuition, and cooperation. Yusuf-named individuals are gifted, patient, and deeply spiritual.",quran:"Surah Yusuf (Chapter 12) is entirely devoted to his story. Allah says it is 'the best of stories'.",famous:["Prophet Yusuf عليه السلام (Joseph in the Bible)","Yusuf Islam (Cat Stevens — musician turned Muslim scholar)","Yusuf al-Qaradawi (Islamic scholar)"],translations:[{lang:"Urdu",name:"یوسف",roman:"Yusuf"},{lang:"Persian",name:"یوسف",roman:"Yusef"},{lang:"Turkish",name:"Yusuf",roman:"Yusuf"},{lang:"Bengali",name:"ইউসুফ",roman:"Yusuf"}]},
+
+  {name:"Hassan",arabic:"حَسَن",gender:"boy",meaning:"Handsome, good, beautiful",full:"Name of the grandson of the Prophet ﷺ, son of Ali and Fatimah. Hassan ibn Ali was the 2nd Imam in Shia Islam and deeply revered in Sunni Islam. The name means good and beautiful in character.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:8,numdesc:"Authority and ambition. Hassan-named individuals are strong-willed, disciplined, and carry natural dignity.",quran:"Derived from the Quranic word 'husn' meaning beauty and goodness (2:83, 4:36).",famous:["Hassan ibn Ali (grandson of the Prophet ﷺ)","Hassan Rouhani (Iranian President)","Hassan Nasrallah (Hezbollah leader)"],translations:[{lang:"Urdu",name:"حسن",roman:"Hassan"},{lang:"Persian",name:"حسن",roman:"Hassan"},{lang:"Turkish",name:"Hasan",roman:"Hasan"},{lang:"Bengali",name:"হাসান",roman:"Hassan"}]},
+
+  {name:"Khalid",arabic:"خَالِد",gender:"boy",meaning:"Eternal, immortal, everlasting",full:"Name of Khalid ibn al-Walid, one of the greatest military commanders in Islamic history, nicknamed Sword of Allah. The name means one who is immortal and lives forever.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:4,numdesc:"Stability and endurance. Khalid-named individuals are dependable, strong, and build things that last.",quran:"Derived from the Quranic word 'khulud' meaning eternal life and immortality (36:26, 43:71).",famous:["Khalid ibn al-Walid (Sword of Allah, military general)","Khalid bin Sultan (Saudi prince & general)","Khalid (American Muslim singer)"],translations:[{lang:"Urdu",name:"خالد",roman:"Khalid"},{lang:"Persian",name:"خالد",roman:"Khaled"},{lang:"Turkish",name:"Halid",roman:"Halid"},{lang:"Bengali",name:"খালিদ",roman:"Khalid"}]},
+
+  {name:"Bilal",arabic:"بِلَال",gender:"boy",meaning:"Moisture, freshness, one who refreshes",full:"Name of Bilal ibn Rabah, the first muezzin (caller to prayer) in Islam, chosen by Prophet Muhammad ﷺ for his beautiful voice. He was a freed Ethiopian slave who became one of the most honored companions.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:6,numdesc:"Nurturing, harmony, and responsibility. Bilal-named individuals have beautiful voices and warm hearts.",quran:"Bilal is not mentioned by name in the Quran but his story is deeply embedded in Islamic history.",famous:["Bilal ibn Rabah (first muezzin of Islam)","Bilal Philips (Islamic scholar)","Bilal (American R&B singer)"],translations:[{lang:"Urdu",name:"بلال",roman:"Bilal"},{lang:"Persian",name:"بلال",roman:"Bilal"},{lang:"Turkish",name:"Bilal",roman:"Bilal"},{lang:"Bengali",name:"বিলাল",roman:"Bilal"}]},
+
+  {name:"Tariq",arabic:"طَارِق",gender:"boy",meaning:"Morning star, night visitor",full:"From the Arabic meaning the one who knocks at night, or the bright morning star. Surah At-Tariq in the Quran refers to the piercing star. Also the name of the great Muslim general Tariq ibn Ziyad.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:2,numdesc:"Intuition and sensitivity. Tariq-named individuals have a mysterious, compelling presence and deep inner strength.",quran:"Surah At-Tariq (Chapter 86) is named for this word — the piercing, brilliant star in the night sky.",famous:["Tariq ibn Ziyad (Muslim general who conquered Spain)","Tariq Ali (British-Pakistani author)","Tariq Farid (Edible Arrangements founder)"],translations:[{lang:"Urdu",name:"طارق",roman:"Tariq"},{lang:"Persian",name:"طارق",roman:"Tarigh"},{lang:"Turkish",name:"Tarık",roman:"Tarık"},{lang:"Bengali",name:"তারিক",roman:"Tariq"}]},
+
+  {name:"Farouk",arabic:"فَارُوق",gender:"boy",meaning:"One who distinguishes truth from falsehood",full:"A title given to Umar ibn al-Khattab, the second Caliph, by the Prophet ﷺ. It means one who can distinguish between right and wrong, truth and falsehood.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:9,numdesc:"Humanitarian and wise. Farouk-named individuals have a strong moral compass and stand firmly for justice.",quran:"Derived from the Quranic concept of furqan — the criterion that separates truth from falsehood (Surah Al-Furqan 25:1).",famous:["Umar al-Farouk (2nd Caliph, title given by Prophet ﷺ)","King Farouk of Egypt","Farouq Abdullah (Indian politician)"],translations:[{lang:"Urdu",name:"فاروق",roman:"Farooq"},{lang:"Persian",name:"فاروق",roman:"Farooq"},{lang:"Turkish",name:"Faruk",roman:"Faruk"},{lang:"Bengali",name:"ফারুক",roman:"Farooq"}]},
+
+  {name:"Ismail",arabic:"إِسْمَاعِيل",gender:"boy",meaning:"God will hear, heard by God",full:"The Islamic name for Prophet Ishmael, son of Prophet Ibrahim and Hajar. He helped his father build the Kaaba in Mecca and is considered the ancestor of the Arab people.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:1,numdesc:"Leadership and independence. Ismail-named individuals are trailblazers who build lasting legacies.",quran:"Mentioned 12 times in the Quran. Surah Al-Baqarah (2:127) describes him building the Kaaba with Ibrahim.",famous:["Prophet Ismail عليه السلام","Ismail I (founder of Safavid dynasty)","Ismail Haniyeh (Palestinian political leader)"],translations:[{lang:"Urdu",name:"اسماعیل",roman:"Ismail"},{lang:"Persian",name:"اسماعیل",roman:"Esmail"},{lang:"Turkish",name:"İsmail",roman:"Ismail"},{lang:"Bengali",name:"ইসমাইল",roman:"Ismail"}]},
+
+  {name:"Zaid",arabic:"زَيْد",gender:"boy",meaning:"Growth, abundance, increase",full:"Zaid ibn Harithah was a beloved companion of the Prophet ﷺ and the only companion mentioned by name in the Quran. The name means one who grows and increases in good.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:3,numdesc:"Creativity and self-expression. Zaid-named individuals are expressive, joyful, and bring growth wherever they go.",quran:"Surah Al-Ahzab (33:37) mentions Zaid by name — the only companion of the Prophet named in the Quran.",famous:["Zaid ibn Harithah (companion of the Prophet ﷺ, in the Quran)","Zaid Hamid (Pakistani analyst)","Zaid Ali (Canadian comedian)"],translations:[{lang:"Urdu",name:"زید",roman:"Zaid"},{lang:"Persian",name:"زید",roman:"Zayd"},{lang:"Turkish",name:"Zeyd",roman:"Zeyd"},{lang:"Bengali",name:"জায়েদ",roman:"Zaid"}]},
+
+  {name:"Nuh",arabic:"نُوح",gender:"boy",meaning:"Rest, quiet, peace",full:"The Islamic name for Prophet Noah, one of the Ulul Azm — prophets of great resolve. He built the Ark and called his people to Islam for 950 years. An entire Surah of the Quran is named after him.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:7,numdesc:"Wisdom and spiritual depth. Nuh-named individuals are patient, deeply faithful, and enduring.",quran:"Surah Nuh (Chapter 71) is devoted entirely to his story. He is mentioned in 43 verses of the Quran.",famous:["Prophet Nuh عليه السلام (Noah)","Nuh Ha Mim Keller (Islamic scholar & translator)"],translations:[{lang:"Urdu",name:"نوح",roman:"Nuh"},{lang:"Persian",name:"نوح",roman:"Nooh"},{lang:"Turkish",name:"Nuh",roman:"Nuh"},{lang:"Bengali",name:"নূহ",roman:"Nuh"}]},
+
+  {name:"Rayyan",arabic:"رَيَّان",gender:"boy",meaning:"Lush, full of life, gate of paradise for those who fast",full:"Rayyan is one of the gates of Paradise specifically for those who observed fasting (Sawm). It means lush, fresh, and full of life. A very popular modern Islamic name.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:5,numdesc:"Freedom and vitality. Rayyan-named individuals radiate energy, health, and a zest for life.",quran:"Mentioned in Hadith (Bukhari): The Prophet ﷺ said — 'In Paradise there is a gate called Rayyan for those who observed fasting.'",famous:["A top Islamic baby name worldwide since 2010","Rayyan Al-Shawaf (author)"],translations:[{lang:"Urdu",name:"ریان",roman:"Rayyan"},{lang:"Persian",name:"ریان",roman:"Rayan"},{lang:"Turkish",name:"Reyyan",roman:"Reyyan"},{lang:"Bengali",name:"রাইয়ান",roman:"Rayyan"}]},
+
+  {name:"Hamza",arabic:"حَمْزَة",gender:"boy",meaning:"Strong, steadfast, lion",full:"Name of Hamza ibn Abd al-Muttalib, the uncle of the Prophet ﷺ, nicknamed the Lion of God and the Master of Martyrs. One of the bravest warriors in early Islam.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:8,numdesc:"Power and authority. Hamza-named individuals are natural protectors — fierce, loyal, and courageous.",quran:"Related to the Arabic root meaning strength and steadfastness. Deeply revered in Islamic tradition.",famous:["Hamza ibn Abd al-Muttalib (Lion of God, uncle of the Prophet ﷺ)","Hamza Yusuf (American Islamic scholar)","Hamza Ali Abbasi (Pakistani actor)"],translations:[{lang:"Urdu",name:"حمزہ",roman:"Hamza"},{lang:"Persian",name:"حمزه",roman:"Hamzeh"},{lang:"Turkish",name:"Hamza",roman:"Hamza"},{lang:"Bengali",name:"হামজা",roman:"Hamza"}]},
+
+  {name:"Idris",arabic:"إِدْرِيس",gender:"boy",meaning:"Studious, one who learns",full:"The Islamic name for Prophet Enoch. He was the first human to write with a pen and was elevated to a high station by Allah. He is associated with wisdom, knowledge, and tailoring.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:4,numdesc:"Stability and hard work. Idris-named individuals are dedicated, scholarly, and achieve greatness through persistent effort.",quran:"Mentioned in Surah Maryam (19:56-57) and Surah Al-Anbiya (21:85). Allah elevated him to a high station.",famous:["Prophet Idris عليه السلام (Enoch)","Idris Elba (British-Sierra Leonean actor)","Idris Haron (Malaysian politician)"],translations:[{lang:"Urdu",name:"ادریس",roman:"Idrees"},{lang:"Persian",name:"ادریس",roman:"Edris"},{lang:"Turkish",name:"İdris",roman:"Idris"},{lang:"Bengali",name:"ইদ্রিস",roman:"Idris"}]},
+
+  {name:"Sufyan",arabic:"سُفيَان",gender:"boy",meaning:"Swift, light-footed, quick",full:"Name of Sufyan ibn Uyaynah and Sufyan al-Thawri, two of the greatest hadith scholars in Islamic history. The name means swift and agile.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:6,numdesc:"Love and nurturing. Sufyan-named individuals are devoted to knowledge, family, and community service.",quran:"Not directly Quranic but a highly revered name among Islamic scholars and companions.",famous:["Sufyan al-Thawri (great Islamic scholar)","Sufyan ibn Uyaynah (hadith scholar)","Abu Sufyan ibn Harb (Meccan leader who accepted Islam)"],translations:[{lang:"Urdu",name:"سفیان",roman:"Sufyan"},{lang:"Persian",name:"سفیان",roman:"Sofyan"},{lang:"Turkish",name:"Süfyan",roman:"Süfyan"},{lang:"Bengali",name:"সুফিয়ান",roman:"Sufyan"}]},
+
+  {name:"Aariz",arabic:"عَارِض",gender:"boy",meaning:"Respectable, intelligent, cloud bearing rain",full:"A modern Arabic name meaning one who is respected and commands intelligence. Also means a cloud that brings rain — symbolizing blessing and abundance.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:2,numdesc:"Intuition and cooperation. Aariz-named individuals are calm, analytical, and bring blessings to those around them.",quran:"Related to the Quranic word 'arid' — a cloud bringing rain — mentioned in Surah Al-Ahqaf (46:24).",famous:["A rising popular name across South Asia and Middle East"],translations:[{lang:"Urdu",name:"عارض",roman:"Aariz"},{lang:"Persian",name:"عارض",roman:"Ariz"},{lang:"Turkish",name:"Ariz",roman:"Ariz"},{lang:"Bengali",name:"আরিজ",roman:"Aariz"}]},
+
+  // ── GIRLS ──
+  {name:"Fatimah",arabic:"فَاطِمَة",gender:"girl",meaning:"One who abstains, weaning, captivating",full:"Fatimah al-Zahra was the beloved daughter of the Prophet Muhammad ﷺ and wife of Ali ibn Abi Talib. She is one of the most revered women in Islam, called the Leader of the Women of Paradise.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:6,numdesc:"Love, nurturing, and responsibility. Fatimah-named girls have generous hearts and deep spiritual strength.",quran:"Not mentioned by name in the Quran but her father the Prophet ﷺ said she is the leader of the women of paradise.",famous:["Fatimah al-Zahra (daughter of the Prophet ﷺ)","Fatima Mernissi (Moroccan feminist scholar)","Fatima Jinnah (Pakistani political leader)"],translations:[{lang:"Urdu",name:"فاطمہ",roman:"Fatima"},{lang:"Persian",name:"فاطمه",roman:"Fatemeh"},{lang:"Turkish",name:"Fatma",roman:"Fatma"},{lang:"Bengali",name:"ফাতেমা",roman:"Fatema"}]},
+
+  {name:"Aisha",arabic:"عَائِشَة",gender:"girl",meaning:"Living, full of life, prosperous",full:"Name of Aisha bint Abi Bakr, the beloved wife of the Prophet Muhammad ﷺ and one of the greatest scholars of early Islam. She narrated thousands of hadiths and is called the Mother of the Believers.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:3,numdesc:"Creativity and vitality. Aisha-named girls are lively, intellectually curious, and naturally gifted.",quran:"Not mentioned by name in the Quran but is one of the most important women in Islamic history.",famous:["Aisha bint Abi Bakr (wife of the Prophet ﷺ, scholar)","Aisha Tyler (American actress & comedian)","Aisha (various political leaders across Muslim world)"],translations:[{lang:"Urdu",name:"عائشہ",roman:"Aisha"},{lang:"Persian",name:"عایشه",roman:"Ayesheh"},{lang:"Turkish",name:"Ayşe",roman:"Ayse"},{lang:"Bengali",name:"আয়েশা",roman:"Ayesha"}]},
+
+  {name:"Maryam",arabic:"مَرْيَم",gender:"girl",meaning:"Piety, exalted, beloved",full:"The Islamic name for Mary, mother of Jesus (Isa عليه السلام). She is the only woman mentioned by name in the Quran and has an entire Surah named after her. She is described as the best woman ever created.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:9,numdesc:"Compassion and universal love. Maryam-named girls are pure of heart, deeply faithful, and deeply loved.",quran:"Surah Maryam (Chapter 19) is entirely named after her. She is mentioned 34 times in the Quran — more than in the New Testament.",famous:["Maryam (mother of Isa/Jesus, in the Quran)","Maryam Nawaz (Pakistani politician)","Maryam Mirzakhani (Iranian mathematician, Fields Medal winner)"],translations:[{lang:"Urdu",name:"مریم",roman:"Maryam"},{lang:"Persian",name:"مریم",roman:"Maryam"},{lang:"Turkish",name:"Meryem",roman:"Meryem"},{lang:"Bengali",name:"মরিয়ম",roman:"Maryam"}]},
+
+  {name:"Khadijah",arabic:"خَدِيجَة",gender:"girl",meaning:"Premature child, trustworthy, first to believe",full:"Name of Khadijah bint Khuwaylid, the first wife of the Prophet Muhammad ﷺ and the first person to accept Islam. She was a successful businesswoman and the Prophet's greatest supporter.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:4,numdesc:"Foundation and stability. Khadijah-named girls are strong, dependable, and build great things from the ground up.",quran:"Not mentioned by name in the Quran but is one of the four greatest women in Islamic tradition.",famous:["Khadijah bint Khuwaylid (first wife of the Prophet ﷺ, first Muslim)","Khadija Khan (various leaders & scholars)"],translations:[{lang:"Urdu",name:"خدیجہ",roman:"Khadija"},{lang:"Persian",name:"خدیجه",roman:"Khadijeh"},{lang:"Turkish",name:"Hatice",roman:"Hatice"},{lang:"Bengali",name:"খাদিজা",roman:"Khadija"}]},
+
+  {name:"Zainab",arabic:"زَيْنَب",gender:"girl",meaning:"Fragrant flower, ornament of the father",full:"Name of the daughter of the Prophet ﷺ and also his granddaughter Zainab bint Ali, renowned for her courage and eloquence after the Battle of Karbala. The name refers to a beautiful fragrant tree.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:7,numdesc:"Wisdom and introspection. Zainab-named girls are courageous, eloquent, and spiritually powerful.",quran:"Indirectly referenced as 'the daughter of the Prophet'. The Quran mentions her wedding in Surah Al-Ahzab (33:37).",famous:["Zainab bint Muhammad (daughter of the Prophet ﷺ)","Zainab bint Ali (granddaughter, known for courage at Karbala)","Zainab Salbi (Iraqi-American humanitarian)"],translations:[{lang:"Urdu",name:"زینب",roman:"Zainab"},{lang:"Persian",name:"زینب",roman:"Zainab"},{lang:"Turkish",name:"Zeynep",roman:"Zeynep"},{lang:"Bengali",name:"যায়নাব",roman:"Zainab"}]},
+
+  {name:"Noor",arabic:"نُور",gender:"girl",meaning:"Light, divine light, radiance",full:"One of the most beautiful Islamic names for girls, meaning divine light and radiance. Allah is called An-Nur — The Light — in the Quran. A girl named Noor carries the meaning of being a light to the world.",origin:"Arabic",lang:"Arabic",type:"Quranic",num:2,numdesc:"Intuition and sensitivity. Noor-named girls illuminate every room they enter and bring clarity and calm.",quran:"Surah An-Nur (Chapter 24) is named for light. Verse 24:35 contains the famous Ayat An-Nur — the Light verse.",famous:["Queen Noor of Jordan (American-born Queen)","Noor Inayat Khan (WWII spy and Sufi princess)","Nour El-Sherif (Egyptian actor)"],translations:[{lang:"Urdu",name:"نور",roman:"Noor"},{lang:"Persian",name:"نور",roman:"Noor"},{lang:"Turkish",name:"Nur",roman:"Nur"},{lang:"Bengali",name:"নূর",roman:"Noor"}]},
+
+  {name:"Safiyah",arabic:"صَفِيَّة",gender:"girl",meaning:"Pure, serene, best friend",full:"Safiyah bint Huyayy was a wife of the Prophet Muhammad ﷺ and the daughter of a Jewish tribal leader who accepted Islam. The name means pure and serene of heart.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:8,numdesc:"Authority and inner strength. Safiyah-named girls are calm, pure-hearted, and inspire trust in everyone around them.",quran:"Derived from 'safa' — purity and clarity — a concept the Quran references in the context of true faith and peace.",famous:["Safiyah bint Huyayy (wife of the Prophet ﷺ)","Safiya Hussain (Indian educator & activist)"],translations:[{lang:"Urdu",name:"صفیہ",roman:"Safiya"},{lang:"Persian",name:"صفیه",roman:"Safiyeh"},{lang:"Turkish",name:"Safiye",roman:"Safiye"},{lang:"Bengali",name:"সাফিয়া",roman:"Safiya"}]},
+
+  {name:"Asma",arabic:"أَسْمَاء",gender:"girl",meaning:"Exalted, prestigious, of higher status",full:"Asma bint Abi Bakr was a courageous companion of the Prophet ﷺ, daughter of the first Caliph Abu Bakr and sister of Aisha. She is nicknamed 'Dhat al-Nitaqayn' — She of the Two Belts.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:1,numdesc:"Leadership and independence. Asma-named girls are courageous, pioneering, and stand firm in their beliefs.",quran:"Related to the Quranic names of Allah — Al-Asma al-Husna (The Most Beautiful Names) referenced in Surah Al-Hashr (59:24).",famous:["Asma bint Abi Bakr (companion of the Prophet ﷺ, nicknamed 'She of the Two Belts')","Asma Assad (First Lady of Syria)","Asma Jahangir (Pakistani human rights lawyer)"],translations:[{lang:"Urdu",name:"اسماء",roman:"Asma"},{lang:"Persian",name:"اسماء",roman:"Asma"},{lang:"Turkish",name:"Esma",roman:"Esma"},{lang:"Bengali",name:"আসমা",roman:"Asma"}]},
+
+  {name:"Ruqayyah",arabic:"رُقَيَّة",gender:"girl",meaning:"Ascending, rising, charm",full:"Ruqayyah bint Muhammad was the daughter of the Prophet ﷺ, married to Uthman ibn Affan, the third Caliph. The name means one who ascends to higher places and rises in life.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:5,numdesc:"Change and freedom. Ruqayyah-named girls are dynamic, upwardly mobile, and always rising to new heights.",quran:"Derived from 'ruqya' — spiritual protection mentioned in Islamic tradition. The concept of rising upward is Quranic.",famous:["Ruqayyah bint Muhammad (daughter of the Prophet ﷺ)"],translations:[{lang:"Urdu",name:"رقیہ",roman:"Ruqayyah"},{lang:"Persian",name:"رقیه",roman:"Roghiyyeh"},{lang:"Turkish",name:"Rukiye",roman:"Rukiye"},{lang:"Bengali",name:"রুকাইয়া",roman:"Ruqayyah"}]},
+
+  {name:"Hana",arabic:"هَنَاء",gender:"girl",meaning:"Happiness, bliss, contentment",full:"A beautiful short name meaning happiness and contentment. Popular across all Arabic-speaking countries, Turkey, and South Asia. It conveys the blessing of a peaceful and joyful life.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:6,numdesc:"Love and harmony. Hana-named girls bring warmth, joy, and deep care to everyone around them.",quran:"Derived from the Quranic concept of contentment and inner peace referenced across many verses (89:27-28).",famous:["Hana Al-Rustom (Lebanese journalist)","Hana Tajima (British-Japanese fashion designer, Muslim)","Hana Yori Dango (cultural reference)"],translations:[{lang:"Urdu",name:"ہنا",roman:"Hana"},{lang:"Persian",name:"هانا",roman:"Hana"},{lang:"Turkish",name:"Hana",roman:"Hana"},{lang:"Bengali",name:"হানা",roman:"Hana"}]},
+
+  {name:"Layla",arabic:"لَيْلَى",gender:"girl",meaning:"Night, dark beauty, intoxicating",full:"One of the most romantic names in Arabic poetry. Layla represents the beloved in classical Arab poetry, especially in the story of Qays and Layla. The name means night, dark beauty, and one who intoxicates the heart.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:9,numdesc:"Compassion and depth of emotion. Layla-named girls have mysterious, captivating beauty and deep emotional intelligence.",quran:"Referenced indirectly — the concept of the night (layl) appears over 90 times in the Quran, including Surah Al-Layl (Chapter 92).",famous:["Layla in Qays wa Layla (iconic Arabic love story)","Laila Ali (daughter of Muhammad Ali, boxer)","Leila Khaled (Palestinian activist)"],translations:[{lang:"Urdu",name:"لیلیٰ",roman:"Layla"},{lang:"Persian",name:"لیلا",roman:"Leila"},{lang:"Turkish",name:"Leyla",roman:"Leyla"},{lang:"Bengali",name:"লায়লা",roman:"Layla"}]},
+
+  {name:"Sumayya",arabic:"سُمَيَّة",gender:"girl",meaning:"Elevated, high, exalted",full:"Sumayya bint Khayyat was the first martyr in Islam — a woman who died for her faith before even the Prophet ﷺ's migration to Medina. She represents the ultimate courage and sacrifice.",origin:"Arabic",lang:"Arabic",type:"Prophet",num:3,numdesc:"Creative strength and expression. Sumayya-named girls are vocal, brave, and willing to stand for what is right at any cost.",quran:"Her story embodies the Quranic verse: 'Do men think that they will be left alone on saying We believe and that they will not be tested?' (29:2)",famous:["Sumayya bint Khayyat (first martyr in Islam)"],translations:[{lang:"Urdu",name:"سمیہ",roman:"Sumayya"},{lang:"Persian",name:"سمیه",roman:"Somayeh"},{lang:"Turkish",name:"Sümeyye",roman:"Sümeyye"},{lang:"Bengali",name:"সুমাইয়া",roman:"Sumayya"}]},
+
+  {name:"Amira",arabic:"أَمِيرَة",gender:"girl",meaning:"Princess, leader, commander",full:"The feminine form of Amir meaning prince or leader. Amira means princess and one who commands. A popular name across all Muslim communities worldwide.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:1,numdesc:"Independence and leadership. Amira-named girls are natural leaders — confident, decisive, and commanding respect.",quran:"Derived from the Quranic root 'amr' meaning command and authority referenced throughout the Quran.",famous:["Amira Hass (Israeli journalist)","Amira Willighagen (Dutch singer)","Princess Amira Al-Taweel (Saudi philanthropist)"],translations:[{lang:"Urdu",name:"امیرہ",roman:"Amira"},{lang:"Persian",name:"امیرا",roman:"Amira"},{lang:"Turkish",name:"Emire",roman:"Emire"},{lang:"Bengali",name:"আমিরা",roman:"Amira"}]},
+
+  {name:"Yasmin",arabic:"يَاسَمِين",gender:"girl",meaning:"Jasmine flower, fragrant",full:"From the Persian word for the jasmine flower, widely used across the Arab world, Turkey, South Asia and beyond. It symbolizes beauty, grace, and a sweet, enduring fragrance.",origin:"Persian",lang:"Persian",type:"Persian",num:7,numdesc:"Wisdom and elegance. Yasmin-named girls have a refined beauty and a calming, poetic presence.",quran:"Not directly Quranic but widely used in Islamic tradition. The jasmine flower symbolizes paradise's fragrance in Islamic poetry.",famous:["Yasmin Mogahed (American Muslim author & speaker)","Yasmine Hamdan (Lebanese singer)","Yasmin Le Bon (British-Iranian model)"],translations:[{lang:"Urdu",name:"یاسمین",roman:"Yasmin"},{lang:"Persian",name:"یاسمین",roman:"Yasmin"},{lang:"Turkish",name:"Yasemin",roman:"Yasemin"},{lang:"Bengali",name:"ইয়াসমিন",roman:"Yasmin"}]},
+
+  {name:"Sana",arabic:"سَنَاء",gender:"girl",meaning:"Brilliance, radiance, praise",full:"A beautiful short name with two meanings — radiance and brilliance of light, and praise and glory. Common across Arab, Persian, Turkish and South Asian Muslim communities.",origin:"Arabic",lang:"Arabic",type:"Arabic",num:5,numdesc:"Freedom and radiance. Sana-named girls shine brightly in everything they do and inspire others around them.",quran:"Related to Surah Al-Nur (24:43) — the concept of brilliance of light that pierces through clouds.",famous:["Sana Amanat (Pakistani-American Marvel Comics editor)","Sana Khan (Indian actress turned Islamic scholar)","Sana Safinaz (famous Pakistani fashion brand founders)"],translations:[{lang:"Urdu",name:"ثناء",roman:"Sana"},{lang:"Persian",name:"ثنا",roman:"Sana"},{lang:"Turkish",name:"Sena",roman:"Sena"},{lang:"Bengali",name:"সানা",roman:"Sana"}]},
+];
+
+let activeGender = 'all';
+let activeLang   = 'all';
+let activeType   = 'all';
+let activeLetter = 'all';
+let searchQuery  = '';
+
+function filterNames() {
+  return names.filter(n => {
+    const q = searchQuery.toLowerCase();
+    const matchSearch = !q || n.name.toLowerCase().includes(q) || n.meaning.toLowerCase().includes(q) || n.full.toLowerCase().includes(q) || n.arabic.includes(q);
+    const matchGender = activeGender === 'all' || n.gender === activeGender;
+    const matchLang   = activeLang === 'all' || n.lang === activeLang;
+    const matchType   = activeType === 'all' || n.type === activeType;
+    const matchLetter = activeLetter === 'all' || n.name.startsWith(activeLetter);
+    return matchSearch && matchGender && matchLang && matchType && matchLetter;
+  });
+}
+
+function renderGrid() {
+  const filtered = filterNames();
+  const grid = document.getElementById('nameGrid');
+  const empty = document.getElementById('emptyState');
+  const count = document.getElementById('resultCount');
+  count.textContent = `Showing ${filtered.length} name${filtered.length !== 1 ? 's' : ''}`;
+  if (!filtered.length) { grid.innerHTML = ''; empty.style.display = 'block'; return; }
+  empty.style.display = 'none';
+  grid.innerHTML = filtered.map(n => `
+    <div class="name-card" onclick="openDetail('${n.name}','${n.gender}')">
+      <div class="card-top">
+        <span class="card-arabic">${n.arabic}</span>
+        <div class="card-badges">
+          <span class="card-lang-badge">${n.lang}</span>
+          <span class="gender-badge ${n.gender === 'boy' ? 'gender-boy' : 'gender-girl'}">${n.gender === 'boy' ? 'Boy' : 'Girl'}</span>
+        </div>
+      </div>
+      <div class="card-name">${n.name}</div>
+      <div class="card-meaning">${n.meaning}</div>
+      <div class="card-tags">
+        <span class="card-tag">${n.type}</span>
+        <span class="card-tag">${n.origin}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setGender(g, btn) {
+  activeGender = g;
+  document.querySelectorAll('[onclick*="setGender"]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrid();
+}
+function setLang(l, btn) {
+  activeLang = l;
+  document.querySelectorAll('[onclick*="setLang"]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrid();
+}
+function setType(t, btn) {
+  activeType = t;
+  document.querySelectorAll('[onclick*="setType"]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrid();
+}
+function setLetter(val) { activeLetter = val; renderGrid(); }
+
+document.getElementById('searchInput').addEventListener('input', e => { searchQuery = e.target.value; renderGrid(); });
+
+function openDetail(name, gender) {
+  const n = names.find(x => x.name === name && x.gender === gender);
+  if (!n) return;
+  document.getElementById('dp-arabic').textContent = n.arabic;
+  document.getElementById('dp-name').textContent = n.name;
+  document.getElementById('dp-meaning').textContent = n.meaning;
+  document.getElementById('dp-gender').textContent = n.gender === 'boy' ? '👦 Boy' : '👧 Girl';
+  document.getElementById('dp-origin').textContent = n.origin;
+  document.getElementById('dp-type').textContent = n.type;
+  document.getElementById('dp-lang').textContent = n.lang;
+  document.getElementById('dp-quran').textContent = n.quran;
+  document.getElementById('dp-fullmeaning').textContent = n.full;
+  document.getElementById('dp-num').textContent = n.num;
+  document.getElementById('dp-numdesc').textContent = n.numdesc;
+  document.getElementById('dp-famous').innerHTML = n.famous.map(f => `<li><span class="famous-dot"></span>${f}</li>`).join('');
+  document.getElementById('dp-translations').innerHTML = n.translations.map(t => `
+    <div class="lang-trans-row">
+      <span class="lt-lang">${t.lang}</span>
+      <span class="lt-name">${t.roman}</span>
+      <span class="lt-native">${t.name}</span>
+    </div>
+  `).join('');
+  document.getElementById('detailPanel').classList.add('open');
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDetail() {
+  document.getElementById('detailPanel').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+renderGrid();
+</script>
+</body>
+</html>
