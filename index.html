@@ -3,980 +3,460 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NamesByFaith — Baby Names for Every Faith & Culture</title>
-<meta name="description" content="Find the perfect baby name from 100,000+ names across all world faiths — Christian, Islamic, Hindu, Buddhist, Chinese, Ethnic, and Sikh traditions.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Hindu Baby Names — 18,000+ Sanskrit & Vedic Names | NamesByFaith.com</title>
+<meta name="description" content="Browse 18,000+ Hindu baby names for boys and girls with English meanings, Devanagari script, Nakshatra, Rashi, deity connections and origins in Sanskrit, Hindi, Tamil, Telugu, Bengali and more.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --white: #FFFFFF;
-    --off-white: #F9F7F4;
-    --ink: #1A1614;
-    --ink-muted: #6B6159;
-    --ink-faint: #B5ADA8;
-    --border: #E8E2DC;
-    --border-dark: #D0C8C0;
-
-    /* Religion colors */
-    --christian-main: #1A4A8B;
-    --christian-light: #EBF0FA;
-    --christian-mid: #5B82C0;
-
-    --hindu-main: #C05A10;
-    --hindu-light: #FDF0E6;
-    --hindu-mid: #E08040;
-
-    --islam-main: #1A6B4A;
-    --islam-light: #E6F5EE;
-    --islam-mid: #3A9B6E;
-
-    --buddhist-main: #8B2020;
-    --buddhist-light: #FAE8E8;
-    --buddhist-mid: #C05050;
-
-    --chinese-main: #8B1A1A;
-    --chinese-light: #FAE8E8;
-    --chinese-mid: #C04040;
-
-    --ethnic-main: #5A3A10;
-    --ethnic-light: #F5EDE0;
-    --ethnic-mid: #A07030;
-
-    --sikh-main: #1A5A8B;
-    --sikh-light: #E6F0FA;
-    --sikh-mid: #4080B0;
+    --saffron-dark:  #6B2D0A;
+    --saffron-main:  #C05A10;
+    --saffron-mid:   #E07830;
+    --saffron-light: #FDF0E6;
+    --saffron-pale:  #FEF8F2;
+    --gold:          #C8991A;
+    --gold-light:    #FBF5E0;
+    --white:         #FFFFFF;
+    --off-white:     #FEF9F5;
+    --ink:           #1A0F08;
+    --ink-muted:     #6B4A30;
+    --ink-faint:     #B59A88;
+    --border:        #EDD5C0;
+    --border-dark:   #D4A88A;
+    --card-bg:       #FFFFFF;
   }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--white);
-    color: var(--ink);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+  body { font-family: 'DM Sans', sans-serif; background: var(--off-white); color: var(--ink); min-height: 100vh; overflow-x: hidden; }
 
-  /* ═══ NAV ═══ */
+  /* ── NAV ── */
   nav {
+    background: var(--saffron-dark);
+    padding: 0 40px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255,255,255,.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 40px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
-  .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--ink);
-    text-decoration: none;
-    letter-spacing: .02em;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .logo-symbol {
-    width: 32px;
-    height: 32px;
-    background: var(--ink);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-  }
-  .logo em { font-style: italic; color: var(--ink-muted); }
-  .nav-right { display: flex; align-items: center; gap: 28px; }
-  .nav-link {
-    font-size: 13px;
-    color: var(--ink-muted);
-    text-decoration: none;
-    font-weight: 400;
-    transition: color .2s;
-    letter-spacing: .02em;
-  }
-  .nav-link:hover { color: var(--ink); }
-  .nav-cta {
-    background: var(--ink);
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: opacity .2s;
-  }
-  .nav-cta:hover { opacity: .85; }
+  .nav-back { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,.6); text-decoration: none; font-size: 13px; transition: color .2s; }
+  .nav-back:hover { color: #fff; }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: .02em; }
+  .nav-logo span { color: rgba(255,255,255,.45); font-weight: 400; }
+  .nav-right { display: flex; gap: 20px; align-items: center; }
+  .nav-pill { background: rgba(255,255,255,.1); color: rgba(255,255,255,.7); padding: 6px 14px; border-radius: 20px; font-size: 12px; text-decoration: none; border: 1px solid rgba(255,255,255,.15); transition: all .2s; }
+  .nav-pill:hover { background: rgba(255,255,255,.18); color: #fff; }
 
-  /* ═══ HERO ═══ */
+  /* ── HERO ── */
   .hero {
-    padding: 80px 40px 60px;
+    background: var(--saffron-dark);
+    padding: 56px 40px 52px;
     text-align: center;
-    max-width: 860px;
-    margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
-  .hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .eyebrow-line { width: 32px; height: 1px; background: var(--border-dark); }
-  .hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(44px, 7vw, 80px);
-    font-weight: 600;
-    line-height: 1.05;
-    color: var(--ink);
-    letter-spacing: -.02em;
-    margin-bottom: 20px;
-  }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--ink-muted);
-  }
-  .hero-sub {
-    font-size: 16px;
-    color: var(--ink-muted);
-    line-height: 1.7;
-    max-width: 560px;
-    margin: 0 auto 36px;
-    font-weight: 300;
-  }
-
-  /* ═══ SEARCH ═══ */
-  .search-outer {
-    max-width: 560px;
-    margin: 0 auto 20px;
-    position: relative;
-  }
-  .search-outer input {
-    width: 100%;
-    padding: 16px 56px 16px 22px;
-    border: 1.5px solid var(--border-dark);
-    border-radius: 14px;
-    font-size: 15px;
-    font-family: 'DM Sans', sans-serif;
-    color: var(--ink);
-    background: var(--white);
-    outline: none;
-    transition: border-color .2s, box-shadow .2s;
-    box-shadow: 0 2px 12px rgba(0,0,0,.04);
-  }
-  .search-outer input::placeholder { color: var(--ink-faint); }
-  .search-outer input:focus {
-    border-color: var(--ink);
-    box-shadow: 0 4px 20px rgba(0,0,0,.08);
-  }
-  .search-icon {
+  .hero::before {
+    content: 'ॐ';
     position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--ink-faint);
-    font-size: 20px;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 380px;
+    color: rgba(255,255,255,.03);
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
     pointer-events: none;
-  }
-  .search-hint { font-size: 12px; color: var(--ink-faint); text-align: center; letter-spacing: .02em; }
-
-  /* ═══ STATS BAR ═══ */
-  .stats-bar {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    padding: 32px 40px;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    background: var(--off-white);
-  }
-  .stat { text-align: center; }
-  .stat-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--ink);
-    line-height: 1;
-    display: block;
-  }
-  .stat-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .1em; margin-top: 4px; display: block; }
-
-  /* ═══ SECTION HEADER ═══ */
-  .section-intro {
-    text-align: center;
-    padding: 64px 40px 40px;
-  }
-  .section-tag {
-    display: inline-block;
-    font-size: 11px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 12px;
-  }
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 600;
-    color: var(--ink);
-    line-height: 1.1;
-    letter-spacing: -.01em;
-    margin-bottom: 12px;
-  }
-  .section-sub {
-    font-size: 14px;
-    color: var(--ink-muted);
-    max-width: 480px;
-    margin: 0 auto;
-    line-height: 1.7;
-    font-weight: 300;
-  }
-
-  /* ═══ TOP 4 RELIGIONS GRID ═══ */
-  .religions-wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px 60px; }
-
-  .top4-label {
-    font-size: 11px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 16px;
-    padding-left: 4px;
-  }
-  .top4-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 16px;
-  }
-
-  /* ═══ RELIGION CARD ═══ */
-  .rel-card {
-    border: 1.5px solid var(--border);
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform .2s, box-shadow .25s, border-color .2s;
-    background: var(--white);
-    text-decoration: none;
-    display: block;
-    position: relative;
-  }
-  .rel-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 48px rgba(0,0,0,.1);
-  }
-  .rel-card-header {
-    padding: 28px 24px 20px;
-    position: relative;
-    overflow: hidden;
-  }
-  .rel-card-header::before {
-    content: '';
-    position: absolute;
-    top: -30px; right: -30px;
-    width: 120px; height: 120px;
-    border-radius: 50%;
-    opacity: .12;
-  }
-  .rel-symbol {
-    font-size: 38px;
-    display: block;
-    margin-bottom: 14px;
-    position: relative;
-    z-index: 1;
     line-height: 1;
   }
-  .rel-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--ink);
-    display: block;
-    line-height: 1.1;
-    margin-bottom: 4px;
-    position: relative;
-    z-index: 1;
-  }
-  .rel-pop {
-    font-size: 11px;
-    color: var(--ink-faint);
-    letter-spacing: .03em;
-    position: relative;
-    z-index: 1;
-  }
-  .rel-card-body {
-    padding: 16px 24px 22px;
-    border-top: 1px solid var(--border);
-  }
-  .rel-total {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 2px;
-  }
-  .rel-total-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 12px; }
-  .rel-gender-row { display: flex; gap: 8px; margin-bottom: 14px; }
-  .rel-gender-pill {
-    font-size: 11px;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-weight: 500;
-    border: 1px solid var(--border);
-    color: var(--ink-muted);
-    background: var(--off-white);
-  }
-  .rel-langs { display: flex; gap: 5px; flex-wrap: wrap; }
-  .rel-lang {
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    color: var(--ink-faint);
-    background: var(--white);
-  }
-  .rel-cta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 16px;
-    padding-top: 14px;
-    border-top: 1px solid var(--border);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-  }
-  .rel-arrow { font-size: 16px; transition: transform .2s; }
-  .rel-card:hover .rel-arrow { transform: translateX(4px); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); color: rgba(255,255,255,.7); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(38px, 6vw, 68px); font-weight: 600; color: #fff; line-height: 1.05; letter-spacing: -.02em; margin-bottom: 8px; }
+  .hero-devanagari { font-family: 'Noto Sans Devanagari', sans-serif; font-size: clamp(18px, 3vw, 28px); color: rgba(255,255,255,.4); margin-bottom: 18px; display: block; }
+  .hero-sub { font-size: 15px; color: rgba(255,255,255,.55); max-width: 520px; margin: 0 auto 36px; line-height: 1.7; font-weight: 300; }
 
-  /* Religion specific colors */
-  .card-christian { --rc: var(--christian-main); --rcl: var(--christian-light); --rcm: var(--christian-mid); }
-  .card-hindu    { --rc: var(--hindu-main);    --rcl: var(--hindu-light);    --rcm: var(--hindu-mid); }
-  .card-islam    { --rc: var(--islam-main);    --rcl: var(--islam-light);    --rcm: var(--islam-mid); }
-  .card-buddhist { --rc: var(--buddhist-main); --rcl: var(--buddhist-light); --rcm: var(--buddhist-mid); }
-  .card-chinese  { --rc: var(--chinese-main);  --rcl: var(--chinese-light);  --rcm: var(--chinese-mid); }
-  .card-ethnic   { --rc: var(--ethnic-main);   --rcl: var(--ethnic-light);   --rcm: var(--ethnic-mid); }
-  .card-sikh     { --rc: var(--sikh-main);     --rcl: var(--sikh-light);     --rcm: var(--sikh-mid); }
+  /* ── SEARCH ── */
+  .search-wrap { max-width: 540px; margin: 0 auto 12px; position: relative; }
+  .search-wrap input { width: 100%; padding: 16px 54px 16px 22px; border-radius: 14px; border: 1.5px solid rgba(255,255,255,.15); background: rgba(255,255,255,.09); color: #fff; font-size: 15px; font-family: 'DM Sans', sans-serif; outline: none; transition: border-color .2s, background .2s; }
+  .search-wrap input::placeholder { color: rgba(255,255,255,.35); }
+  .search-wrap input:focus { border-color: var(--saffron-mid); background: rgba(255,255,255,.14); }
+  .search-icon { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,.3); font-size: 20px; pointer-events: none; }
 
-  .rel-card { --rc: #333; --rcl: #f5f5f5; --rcm: #666; }
-  .rel-card:hover { border-color: var(--rc); }
-  .rel-card-header { background: var(--rcl); }
-  .rel-card-header::before { background: var(--rc); }
-  .rel-total { color: var(--rc); }
-  .rel-cta { color: var(--rc); }
+  /* ── HERO STATS ── */
+  .hero-stats { display: flex; justify-content: center; gap: 44px; margin-top: 32px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.08); }
+  .hstat { text-align: center; }
+  .hstat-num { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700; color: #fff; display: block; line-height: 1; }
+  .hstat-label { font-size: 10px; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .1em; margin-top: 4px; display: block; }
 
-  /* ═══ BOTTOM 3 GRID ═══ */
-  .bottom3-label {
-    font-size: 11px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 16px;
-    padding-left: 4px;
-    margin-top: 8px;
-  }
-  .bottom3-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-  .bottom3-grid .rel-card-header { padding: 22px 22px 16px; }
-  .bottom3-grid .rel-symbol { font-size: 30px; margin-bottom: 10px; }
-  .bottom3-grid .rel-name { font-size: 20px; }
-  .bottom3-grid .rel-total { font-size: 26px; }
+  /* ── LANG STRIP ── */
+  .lang-strip { background: var(--white); border-bottom: 1px solid var(--border); padding: 14px 40px; }
+  .lang-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .lang-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; margin-right: 4px; font-weight: 500; }
+  .lang-note { font-size: 11px; color: var(--ink-faint); margin-left: auto; font-style: italic; }
+  .lang-chip { padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; color: var(--ink-muted); font-size: 12px; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: all .15s; white-space: nowrap; font-weight: 500; }
+  .lang-chip:hover { border-color: var(--saffron-main); color: var(--saffron-main); }
+  .lang-chip.active { background: var(--saffron-main); border-color: var(--saffron-main); color: #fff; }
+  .lang-chip .native { font-size: 11px; opacity: .7; margin-left: 4px; }
 
-  /* ═══ HOW IT WORKS ═══ */
-  .how-section {
-    background: var(--off-white);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 64px 40px;
-  }
-  .how-inner { max-width: 900px; margin: 0 auto; }
-  .how-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 36px;
-    font-weight: 600;
-    color: var(--ink);
-    text-align: center;
-    margin-bottom: 48px;
-    letter-spacing: -.01em;
-  }
-  .how-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
-  .how-step { text-align: center; }
-  .how-num {
-    width: 44px; height: 44px;
-    border-radius: 50%;
-    background: var(--ink);
-    color: #fff;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 14px;
-  }
-  .how-step-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
-  .how-step-desc { font-size: 12px; color: var(--ink-muted); line-height: 1.6; }
+  /* ── FILTER BAR ── */
+  .filter-bar { background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 40px; position: sticky; top: 62px; z-index: 90; }
+  .filter-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .filter-label { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; font-weight: 500; }
+  .filter-chip { padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--border); background: transparent; color: var(--ink-muted); font-size: 12px; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: all .15s; font-weight: 500; }
+  .filter-chip:hover { border-color: var(--saffron-main); color: var(--saffron-main); }
+  .filter-chip.active { background: var(--saffron-main); border-color: var(--saffron-main); color: #fff; }
+  .filter-divider { width: 1px; height: 24px; background: var(--border); }
+  .filter-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .result-count { font-size: 12px; color: var(--ink-faint); }
+  .letter-select { padding: 5px 10px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 12px; font-family: 'DM Sans', sans-serif; color: var(--ink-muted); background: var(--white); cursor: pointer; outline: none; }
 
-  /* ═══ FEATURES ═══ */
-  .features-section { padding: 64px 40px; max-width: 1100px; margin: 0 auto; }
-  .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
-  .feature-card {
-    background: var(--off-white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 24px;
-  }
-  .feature-icon { font-size: 28px; margin-bottom: 12px; display: block; }
-  .feature-title { font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
-  .feature-desc { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
+  /* ── MAIN ── */
+  .main { max-width: 1100px; margin: 0 auto; padding: 28px 32px 60px; }
+  .name-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
 
-  /* ═══ FOOTER ═══ */
-  footer {
-    background: var(--ink);
-    color: rgba(255,255,255,.5);
-    padding: 48px 40px 32px;
-  }
-  .footer-inner { max-width: 1100px; margin: 0 auto; }
-  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-  .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .footer-tagline { font-size: 13px; line-height: 1.6; max-width: 240px; }
-  .footer-col-title { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.3); margin-bottom: 14px; font-weight: 500; }
-  .footer-links { list-style: none; }
-  .footer-links li { margin-bottom: 8px; }
-  .footer-links a { color: rgba(255,255,255,.5); text-decoration: none; font-size: 13px; transition: color .2s; }
-  .footer-links a:hover { color: #fff; }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; font-size: 12px; }
+  /* ── NAME CARD ── */
+  .name-card { background: var(--card-bg); border: 1.5px solid var(--border); border-radius: 16px; padding: 18px 18px 14px; cursor: pointer; transition: box-shadow .2s, border-color .2s, transform .15s; position: relative; overflow: hidden; }
+  .name-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--saffron-main); opacity: 0; transition: opacity .2s; }
+  .name-card:hover { box-shadow: 0 8px 28px rgba(192,90,16,.12); border-color: var(--saffron-mid); transform: translateY(-2px); }
+  .name-card:hover::before { opacity: 1; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+  .card-devanagari { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 14px; color: var(--ink-faint); font-weight: 600; line-height: 1.3; }
+  .card-badges { display: flex; gap: 5px; align-items: center; flex-wrap: wrap; }
+  .card-lang-badge { font-size: 9px; padding: 2px 7px; border-radius: 8px; background: var(--saffron-light); color: var(--saffron-main); font-weight: 600; letter-spacing: .04em; white-space: nowrap; }
+  .gender-badge { font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+  .gender-boy { background: #E6F0FA; color: #1A4A8B; }
+  .gender-girl { background: #FAE6F0; color: #8B1A4A; }
+  .card-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: var(--ink); line-height: 1; margin-bottom: 5px; letter-spacing: -.01em; }
+  .card-meaning { font-size: 12px; color: var(--ink-muted); line-height: 1.5; margin-bottom: 10px; }
+  .card-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+  .card-tag { font-size: 10px; padding: 2px 7px; border-radius: 6px; border: 1px solid var(--border); color: var(--ink-faint); }
 
-  /* ═══ SEARCH OVERLAY ═══ */
-  .search-results-dropdown {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0; right: 0;
-    background: #fff;
-    border: 1.5px solid var(--border-dark);
-    border-radius: 14px;
-    box-shadow: 0 16px 48px rgba(0,0,0,.12);
-    z-index: 200;
-    overflow: hidden;
-    display: none;
-  }
-  .search-results-dropdown.open { display: block; }
-  .search-result-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 12px 18px;
-    cursor: pointer;
-    border-bottom: 1px solid var(--border);
-    transition: background .15s;
-    text-decoration: none;
-  }
-  .search-result-item:last-child { border-bottom: none; }
-  .search-result-item:hover { background: var(--off-white); }
-  .sri-icon { font-size: 18px; width: 28px; text-align: center; }
-  .sri-name { font-size: 14px; font-weight: 500; color: var(--ink); }
-  .sri-detail { font-size: 12px; color: var(--ink-faint); margin-top: 1px; }
-  .sri-badge { margin-left: auto; font-size: 10px; padding: 2px 8px; border-radius: 8px; white-space: nowrap; }
+  /* ── EMPTY ── */
+  .empty { text-align: center; padding: 80px 20px; color: var(--ink-faint); display: none; }
+  .empty-icon { font-size: 48px; margin-bottom: 12px; opacity: .4; display: block; }
+  .empty h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--ink-muted); margin-bottom: 6px; }
 
-  @media (max-width: 900px) {
-    .top4-grid { grid-template-columns: repeat(2, 1fr); }
-    .bottom3-grid { grid-template-columns: repeat(2, 1fr); }
-    .how-steps { grid-template-columns: repeat(2, 1fr); }
-    .features-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-top { grid-template-columns: 1fr 1fr; }
-    nav { padding: 0 20px; }
-    .hero { padding: 60px 20px 40px; }
-    .stats-bar { gap: 24px; padding: 24px 20px; }
-    .religions-wrap { padding: 0 20px 48px; }
-  }
-  @media (max-width: 600px) {
-    .top4-grid { grid-template-columns: 1fr; }
-    .bottom3-grid { grid-template-columns: 1fr; }
-    .how-steps { grid-template-columns: 1fr 1fr; gap: 20px; }
-    .features-grid { grid-template-columns: 1fr; }
-    .footer-top { grid-template-columns: 1fr; }
-    .nav-right { gap: 16px; }
-    .nav-link { display: none; }
-    .stats-bar { gap: 16px; flex-wrap: wrap; }
+  /* ── DETAIL PANEL ── */
+  .overlay { display: none; position: fixed; inset: 0; background: rgba(107,45,10,.55); z-index: 200; backdrop-filter: blur(3px); }
+  .overlay.open { display: block; }
+  .detail-panel { position: fixed; top: 0; right: -500px; width: min(500px, 100vw); height: 100%; background: var(--white); z-index: 300; overflow-y: auto; transition: right .3s cubic-bezier(.4,0,.2,1); box-shadow: -12px 0 48px rgba(107,45,10,.2); }
+  .detail-panel.open { right: 0; }
+  .dp-header { background: var(--saffron-dark); padding: 30px 28px 26px; position: relative; }
+  .dp-close { position: absolute; top: 18px; right: 18px; background: rgba(255,255,255,.1); border: none; color: #fff; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: background .2s; }
+  .dp-close:hover { background: rgba(255,255,255,.2); }
+  .dp-dev-big { font-family: 'Noto Sans Devanagari', sans-serif; font-size: 28px; color: rgba(255,255,255,.45); display: block; margin-bottom: 6px; }
+  .dp-name { font-family: 'Cormorant Garamond', serif; font-size: 46px; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 8px; }
+  .dp-meaning-hero { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.6; font-weight: 300; }
+  .dp-body { padding: 24px 28px; }
+  .dp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+  .dp-cell { background: var(--off-white); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .dp-cell-label { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-faint); margin-bottom: 4px; font-weight: 500; }
+  .dp-cell-val { font-size: 14px; color: var(--ink); font-weight: 500; }
+  .dp-section { margin-bottom: 20px; }
+  .dp-section-label { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: var(--saffron-main); font-weight: 600; margin-bottom: 8px; }
+  .dp-section-val { font-size: 14px; color: var(--ink-muted); line-height: 1.7; }
+  .dp-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; color: var(--saffron-main); font-weight: 700; line-height: 1; margin-bottom: 4px; }
+  .dp-num-desc { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
+  .vedic-box { background: var(--saffron-light); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; }
+  .vedic-icon { font-size: 18px; margin-bottom: 6px; display: block; }
+  .vedic-text { font-size: 13px; color: var(--saffron-dark); line-height: 1.6; }
+  .famous-list { list-style: none; }
+  .famous-list li { font-size: 13px; color: var(--ink-muted); padding: 7px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+  .famous-list li:last-child { border-bottom: none; }
+  .famous-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--saffron-mid); flex-shrink: 0; }
+  .lang-translations { display: flex; flex-direction: column; gap: 8px; }
+  .lang-trans-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--off-white); border-radius: 8px; border: 1px solid var(--border); }
+  .lt-lang { font-size: 11px; color: var(--ink-faint); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+  .lt-name { font-size: 14px; color: var(--ink); font-weight: 500; }
+  .lt-native { font-size: 13px; color: var(--ink-faint); }
+
+  /* ── FOOTER ── */
+  footer { background: var(--saffron-dark); color: rgba(255,255,255,.45); text-align: center; padding: 32px 40px; font-size: 13px; }
+  footer a { color: rgba(255,255,255,.6); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 16px; }
+    .hero { padding: 44px 20px 40px; }
+    .hero-stats { gap: 20px; flex-wrap: wrap; }
+    .lang-strip, .filter-bar { padding: 12px 16px; }
+    .main { padding: 20px 16px 48px; }
+    .nav-right { display: none; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a href="/" class="logo">
-    <span class="logo-symbol">✦</span>
-    NamesByFaith<em>.com</em>
-  </a>
+  <a href="../" class="nav-back">← NamesByFaith.com</a>
+  <a href="../" class="nav-logo">NamesByFaith<span>.com</span></a>
   <div class="nav-right">
-    <a href="#religions" class="nav-link">All Faiths</a>
-    <a href="#how" class="nav-link">How it works</a>
-    <a href="#religions" class="nav-cta">Find a Name</a>
+    <a href="#" class="nav-pill">🪔 Hindu Names</a>
+    <a href="../" class="nav-pill">All Faiths</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">
-    <span class="eyebrow-line"></span>
-    58,000+ names from every faith & culture
-    <span class="eyebrow-line"></span>
-  </div>
-  <h1>Baby names rooted in<br><em>faith & tradition</em></h1>
-  <p class="hero-sub">Search 100,000+ meaningful baby names from all 7 major world religions — with origins, meanings, and cultural significance. Completely free.</p>
-
-  <div class="search-outer">
-    <input type="text" id="globalSearch" placeholder="Search any name across all faiths..." autocomplete="off">
+  <div class="hero-badge">🪔 &nbsp; 18,000+ Hindu Baby Names</div>
+  <h1>Sacred Names from<br>Ancient Traditions</h1>
+  <span class="hero-devanagari">हिंदू शिशु नाम — अर्थ सहित</span>
+  <p class="hero-sub">Explore 18,000+ Hindu baby names for boys and girls — with full English meanings, Devanagari script, Nakshatra, Rashi, deity connections and regional origins. English is the default for everyone.</p>
+  <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search by name or meaning in English..." autocomplete="off">
     <span class="search-icon">⌕</span>
-    <div class="search-results-dropdown" id="searchDropdown">
-      <a href="christians/" class="search-result-item">
-        <span class="sri-icon">✝️</span>
-        <div><div class="sri-name">Christian Names</div><div class="sri-detail">12,000+ Biblical, Saint & global Christian names</div></div>
-        <span class="sri-badge" style="background:#EBF0FA;color:#1A4A8B;">Browse →</span>
-      </a>
-      <a href="hindus/" class="search-result-item">
-        <span class="sri-icon">🪔</span>
-        <div><div class="sri-name">Hindu Names</div><div class="sri-detail">10,000+ Sanskrit, Vedic & regional names</div></div>
-        <span class="sri-badge" style="background:#FDF0E6;color:#C05A10;">Browse →</span>
-      </a>
-      <a href="muslims/" class="search-result-item">
-        <span class="sri-icon">☪️</span>
-        <div><div class="sri-name">Islamic Names</div><div class="sri-detail">10,000+ Arabic, Quranic & Urdu names</div></div>
-        <span class="sri-badge" style="background:#E6F5EE;color:#1A6B4A;">Browse →</span>
-      </a>
-    </div>
   </div>
-  <p class="search-hint">or choose your faith below ↓</p>
+  <div class="hero-stats">
+    <div class="hstat"><span class="hstat-num">18,000+</span><span class="hstat-label">Total Names</span></div>
+    <div class="hstat"><span class="hstat-num">9,500+</span><span class="hstat-label">Boys Names</span></div>
+    <div class="hstat"><span class="hstat-num">8,500+</span><span class="hstat-label">Girls Names</span></div>
+    <div class="hstat"><span class="hstat-num">27</span><span class="hstat-label">Nakshatras</span></div>
+    <div class="hstat"><span class="hstat-num">12</span><span class="hstat-label">Rashis</span></div>
+  </div>
 </section>
 
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="stat"><span class="stat-num">100,000+</span><span class="stat-label">Total Names</span></div>
-  <div class="stat"><span class="stat-num">7</span><span class="stat-label">World Faiths</span></div>
-  <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Languages</span></div>
-  <div class="stat"><span class="stat-num">8B+</span><span class="stat-label">People Represented</span></div>
-  <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Free Forever</span></div>
+<div class="lang-strip">
+  <div class="lang-inner">
+    <span class="lang-label">Language</span>
+    <button class="lang-chip active" onclick="setLang('all',this)">🌐 English <span class="native">(Default)</span></button>
+    <button class="lang-chip" onclick="setLang('Sanskrit',this)">Sanskrit <span class="native">संस्कृत</span></button>
+    <button class="lang-chip" onclick="setLang('Hindi',this)">Hindi <span class="native">हिंदी</span></button>
+    <button class="lang-chip" onclick="setLang('Tamil',this)">Tamil <span class="native">தமிழ்</span></button>
+    <button class="lang-chip" onclick="setLang('Telugu',this)">Telugu <span class="native">తెలుగు</span></button>
+    <button class="lang-chip" onclick="setLang('Bengali',this)">Bengali <span class="native">বাংলা</span></button>
+    <button class="lang-chip" onclick="setLang('Gujarati',this)">Gujarati <span class="native">ગુજરાતી</span></button>
+    <button class="lang-chip" onclick="setLang('Marathi',this)">Marathi <span class="native">मराठी</span></button>
+    <span class="lang-note">All names shown with full English meanings</span>
+  </div>
 </div>
 
-<!-- RELIGIONS -->
-<section id="religions">
-  <div class="section-intro">
-    <span class="section-tag">Browse by faith</span>
-    <h2 class="section-title">Choose your tradition</h2>
-    <p class="section-sub">Click your faith to see all names, filter by language, gender, and find the perfect name for your child.</p>
-  </div>
-
-  <div class="religions-wrap">
-
-    <!-- TOP 4 -->
-    <p class="top4-label">Four largest faiths — by world population</p>
-    <div class="top4-grid">
-
-      <!-- CHRISTIANITY -->
-      <a href="christians/" class="rel-card card-christian">
-        <div class="rel-card-header">
-          <span class="rel-symbol">✝️</span>
-          <span class="rel-name">Christianity</span>
-          <span class="rel-pop">2.4 – 2.5 billion people worldwide</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">20,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 11,000 Boys</span>
-            <span class="rel-gender-pill">👧 9,000 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">English</span>
-            <span class="rel-lang">Latin</span>
-            <span class="rel-lang">Hebrew</span>
-            <span class="rel-lang">Greek</span>
-            <span class="rel-lang">Spanish</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Christian Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- HINDUISM -->
-      <a href="hindus/" class="rel-card card-hindu">
-        <div class="rel-card-header">
-          <span class="rel-symbol">🪔</span>
-          <span class="rel-name">Hinduism</span>
-          <span class="rel-pop">1.1 – 1.2 billion people worldwide</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">18,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 9,500 Boys</span>
-            <span class="rel-gender-pill">👧 8,500 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">Sanskrit</span>
-            <span class="rel-lang">Hindi</span>
-            <span class="rel-lang">Tamil</span>
-            <span class="rel-lang">Bengali</span>
-            <span class="rel-lang">Telugu</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Hindu Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- ISLAM -->
-      <a href="muslims/" class="rel-card card-islam">
-        <div class="rel-card-header">
-          <span class="rel-symbol">☪️</span>
-          <span class="rel-name">Islam</span>
-          <span class="rel-pop">1.9 – 2.0 billion people worldwide</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">18,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 9,500 Boys</span>
-            <span class="rel-gender-pill">👧 8,500 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">Arabic</span>
-            <span class="rel-lang">Urdu</span>
-            <span class="rel-lang">Persian</span>
-            <span class="rel-lang">Turkish</span>
-            <span class="rel-lang">Bengali</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Islamic Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- BUDDHISM -->
-      <a href="buddhists/" class="rel-card card-buddhist">
-        <div class="rel-card-header">
-          <span class="rel-symbol">☸️</span>
-          <span class="rel-name">Buddhism</span>
-          <span class="rel-pop">500 – 530 million people worldwide</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">16,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 8,000 Boys</span>
-            <span class="rel-gender-pill">👧 8,000 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">Pali</span>
-            <span class="rel-lang">Sanskrit</span>
-            <span class="rel-lang">Tibetan</span>
-            <span class="rel-lang">Japanese</span>
-            <span class="rel-lang">Thai</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Buddhist Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- BOTTOM 3 -->
-    <p class="bottom3-label">Three more world traditions</p>
-    <div class="bottom3-grid">
-
-      <!-- CHINESE FOLK -->
-      <a href="chinese/" class="rel-card card-chinese">
-        <div class="rel-card-header">
-          <span class="rel-symbol">🐉</span>
-          <span class="rel-name">Chinese Folk</span>
-          <span class="rel-pop">400 – 450 million · Taoism, Shenism & traditional Chinese</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">16,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 8,000 Boys</span>
-            <span class="rel-gender-pill">👧 8,000 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">Mandarin</span>
-            <span class="rel-lang">Cantonese</span>
-            <span class="rel-lang">Hokkien</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Chinese Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- ETHNIC / TRIBAL -->
-      <a href="ethnic/" class="rel-card card-ethnic">
-        <div class="rel-card-header">
-          <span class="rel-symbol">🌍</span>
-          <span class="rel-name">Ethnic & Tribal</span>
-          <span class="rel-pop">~300 million · African, Indigenous & Native traditions</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">14,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 7,000 Boys</span>
-            <span class="rel-gender-pill">👧 7,000 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">Yoruba</span>
-            <span class="rel-lang">Swahili</span>
-            <span class="rel-lang">Zulu</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Ethnic Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- SIKHISM -->
-      <a href="sikhs/" class="rel-card card-sikh">
-        <div class="rel-card-header">
-          <span class="rel-symbol">
-            <svg width="42" height="46" viewBox="0 0 210 230" xmlns="http://www.w3.org/2000/svg" fill="var(--sikh-main)">
-              <!-- Khanda: double-edged sword (center blade) -->
-              <path d="M105 8 L115 28 L112 90 L112 130 L108 145 L105 155 L102 145 L98 130 L98 90 L95 28 Z"/>
-              <!-- Chakkar: ring/circle -->
-              <circle cx="105" cy="105" r="38" fill="none" stroke="var(--sikh-main)" stroke-width="14"/>
-              <!-- Left kirpan (curved sword) -->
-              <path d="M105 62 C85 58, 38 65, 18 85 C8 97, 8 112, 14 124 C22 140, 42 150, 65 158 L68 150 C50 143, 34 135, 27 122 C22 112, 24 100, 32 90 C50 72, 88 68, 105 72 Z"/>
-              <!-- Right kirpan (curved sword) -->
-              <path d="M105 62 C125 58, 172 65, 192 85 C202 97, 202 112, 196 124 C188 140, 168 150, 145 158 L142 150 C160 143, 176 135, 183 122 C188 112, 186 100, 178 90 C160 72, 122 68, 105 72 Z"/>
-              <!-- Bottom handle crossguard -->
-              <rect x="96" y="145" width="18" height="8" rx="3"/>
-              <rect x="82" y="152" width="46" height="7" rx="3"/>
-              <!-- Bottom pommel -->
-              <rect x="99" y="158" width="12" height="18" rx="4"/>
-              <circle cx="105" cy="180" r="7"/>
-              <!-- Small end balls on kirpan tips -->
-              <circle cx="65" cy="159" r="5"/>
-              <circle cx="145" cy="159" r="5"/>
-            </svg>
-          </span>
-          <span class="rel-name">Sikhism</span>
-          <span class="rel-pop">25 – 30 million people worldwide</span>
-        </div>
-        <div class="rel-card-body">
-          <div class="rel-total">12,000+</div>
-          <div class="rel-total-label">Total names</div>
-          <div class="rel-gender-row">
-            <span class="rel-gender-pill">👦 6,000 Boys</span>
-            <span class="rel-gender-pill">👧 6,000 Girls</span>
-          </div>
-          <div class="rel-langs">
-            <span class="rel-lang">Punjabi</span>
-            <span class="rel-lang">Gurmukhi</span>
-            <span class="rel-lang">Sanskrit</span>
-            <span class="rel-lang">+more</span>
-          </div>
-          <div class="rel-cta">
-            <span>Explore Sikh Names</span>
-            <span class="rel-arrow">→</span>
-          </div>
-        </div>
-      </a>
-
+<div class="filter-bar">
+  <div class="filter-inner">
+    <span class="filter-label">Gender</span>
+    <button class="filter-chip active" onclick="setGender('all',this)">All</button>
+    <button class="filter-chip" onclick="setGender('boy',this)">👦 Boys</button>
+    <button class="filter-chip" onclick="setGender('girl',this)">👧 Girls</button>
+    <div class="filter-divider"></div>
+    <span class="filter-label">Deity</span>
+    <button class="filter-chip" onclick="setDeity('Vishnu',this)">🔵 Vishnu</button>
+    <button class="filter-chip" onclick="setDeity('Shiva',this)">⚪ Shiva</button>
+    <button class="filter-chip" onclick="setDeity('Lakshmi',this)">🌸 Lakshmi</button>
+    <button class="filter-chip" onclick="setDeity('Durga',this)">🔱 Durga</button>
+    <button class="filter-chip" onclick="setDeity('Saraswati',this)">🎵 Saraswati</button>
+    <button class="filter-chip" onclick="setDeity('all',this)">All Deities</button>
+    <div class="filter-divider"></div>
+    <div class="filter-right">
+      <select class="letter-select" id="letterSelect" onchange="setLetter(this.value)">
+        <option value="all">A – Z</option>
+        <option value="A">A</option><option value="D">D</option>
+        <option value="G">G</option><option value="I">I</option>
+        <option value="K">K</option><option value="L">L</option>
+        <option value="M">M</option><option value="N">N</option>
+        <option value="P">P</option><option value="R">R</option>
+        <option value="S">S</option><option value="T">T</option>
+        <option value="V">V</option><option value="Y">Y</option>
+      </select>
+      <span class="result-count" id="resultCount">Showing all names</span>
     </div>
   </div>
-</section>
+</div>
 
-<!-- HOW IT WORKS -->
-<section class="how-section" id="how">
-  <div class="how-inner">
-    <h2 class="how-title">How it works</h2>
-    <div class="how-steps">
-      <div class="how-step">
-        <div class="how-num">1</div>
-        <div class="how-step-title">Choose your faith</div>
-        <div class="how-step-desc">Click on your religion from the 7 world faiths listed above. Each has its own dedicated section.</div>
-      </div>
-      <div class="how-step">
-        <div class="how-num">2</div>
-        <div class="how-step-title">Pick a language</div>
-        <div class="how-step-desc">Select your preferred language — Arabic, Urdu, Hindi, Tamil and more. English is the default for everyone.</div>
-      </div>
-      <div class="how-step">
-        <div class="how-num">3</div>
-        <div class="how-step-title">Filter by gender</div>
-        <div class="how-step-desc">Browse All names, or filter specifically for Boys or Girls names with one click.</div>
-      </div>
-      <div class="how-step">
-        <div class="how-num">4</div>
-        <div class="how-step-title">Click for full details</div>
-        <div class="how-step-desc">Tap any name to see the full meaning, origin, numerology, native script, and famous people with that name.</div>
-      </div>
-    </div>
+<div class="main">
+  <div class="name-grid" id="nameGrid"></div>
+  <div class="empty" id="emptyState">
+    <span class="empty-icon">🪔</span>
+    <h3>No names found</h3>
+    <p>Try a different search or clear your filters</p>
   </div>
-</section>
+</div>
 
-<!-- FEATURES -->
-<section class="features-section">
-  <div class="section-intro" style="padding: 0 0 0 0;">
-    <span class="section-tag">Why NamesByFaith</span>
-    <h2 class="section-title">Everything a parent needs</h2>
-    <p class="section-sub">The most complete faith-based baby name resource on the internet — completely free.</p>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card">
-      <span class="feature-icon">📖</span>
-      <div class="feature-title">Full meanings & origins</div>
-      <div class="feature-desc">Every name comes with its complete meaning, language origin, and cultural context — not just a one-word translation.</div>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">🌐</span>
-      <div class="feature-title">Native scripts included</div>
-      <div class="feature-desc">See names in their original scripts — Arabic, Devanagari, Chinese characters, Hebrew, Gurmukhi and more.</div>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">👶</span>
-      <div class="feature-title">Boys & Girls separated</div>
-      <div class="feature-desc">Filter instantly by gender. Find boy names, girl names, or browse unisex names across all faiths.</div>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">🔢</span>
-      <div class="feature-title">Numerology for every name</div>
-      <div class="feature-desc">Discover the numerology number and personality traits associated with each name across all traditions.</div>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">🔍</span>
-      <div class="feature-title">Search by meaning</div>
-      <div class="feature-desc">Don't know a name? Search by meaning — type "light", "strong", or "blessed" and find names from all faiths.</div>
-    </div>
-    <div class="feature-card">
-      <span class="feature-icon">💰</span>
-      <div class="feature-title">100% free, always</div>
-      <div class="feature-desc">No account. No subscription. No ads blocking your search. NamesByFaith is and always will be completely free.</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-logo">NamesByFaith.com</div>
-        <div class="footer-tagline">The world's most complete faith-based baby name resource. 100,000+ names from 7 traditions. Free forever.</div>
-      </div>
-      <div>
-        <div class="footer-col-title">Faiths</div>
-        <ul class="footer-links">
-          <li><a href="christians/">✝️ Christianity</a></li>
-          <li><a href="hindus/">🪔 Hinduism</a></li>
-          <li><a href="muslims/">☪️ Islam</a></li>
-          <li><a href="buddhists/">☸️ Buddhism</a></li>
-          <li><a href="chinese/">🐉 Chinese Folk</a></li>
-          <li><a href="ethnic/">🌍 Ethnic & Tribal</a></li>
-          <li><a href="sikhs/">⚔️ Sikhism</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Browse</div>
-        <ul class="footer-links">
-          <li><a href="#">Boys Names</a></li>
-          <li><a href="#">Girls Names</a></li>
-          <li><a href="#">By Meaning</a></li>
-          <li><a href="#">By Language</a></li>
-          <li><a href="#">Most Popular</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Info</div>
-        <ul class="footer-links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 NamesByFaith.com — All rights reserved</span>
-      <span>Made with ♥ for parents everywhere</span>
-    </div>
-  </div>
+  <p>🪔 <strong style="color:rgba(255,255,255,.7)">Hindu Names</strong> — part of <a href="../">NamesByFaith.com</a> · 18,000+ Hindu baby names · Free forever</p>
+  <p style="margin-top:8px;font-size:11px;">Also explore: <a href="../muslims/">Islamic Names</a> · <a href="../christians/">Christian Names</a> · <a href="../buddhists/">Buddhist Names</a></p>
 </footer>
 
+<div class="overlay" id="overlay" onclick="closeDetail()"></div>
+<div class="detail-panel" id="detailPanel">
+  <div class="dp-header">
+    <button class="dp-close" onclick="closeDetail()">✕</button>
+    <span class="dp-dev-big" id="dp-dev"></span>
+    <div class="dp-name" id="dp-name"></div>
+    <div class="dp-meaning-hero" id="dp-meaning"></div>
+  </div>
+  <div class="dp-body">
+    <div class="dp-grid">
+      <div class="dp-cell"><div class="dp-cell-label">Gender</div><div class="dp-cell-val" id="dp-gender"></div></div>
+      <div class="dp-cell"><div class="dp-cell-label">Origin</div><div class="dp-cell-val" id="dp-origin"></div></div>
+      <div class="dp-cell"><div class="dp-cell-label">Rashi</div><div class="dp-cell-val" id="dp-rashi"></div></div>
+      <div class="dp-cell"><div class="dp-cell-label">Nakshatra</div><div class="dp-cell-val" id="dp-nakshatra"></div></div>
+    </div>
+    <div class="vedic-box">
+      <span class="vedic-icon">🔱</span>
+      <div class="vedic-text" id="dp-vedic"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Full Meaning in English</div>
+      <div class="dp-section-val" id="dp-fullmeaning"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Deity Connection</div>
+      <div class="dp-section-val" id="dp-deity"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Name in Regional Languages</div>
+      <div class="lang-translations" id="dp-translations"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Numerology</div>
+      <div class="dp-num" id="dp-num"></div>
+      <div class="dp-num-desc" id="dp-numdesc"></div>
+    </div>
+    <div class="dp-section">
+      <div class="dp-section-label">Famous People with This Name</div>
+      <ul class="famous-list" id="dp-famous"></ul>
+    </div>
+  </div>
+</div>
+
 <script>
-  // Global search — shows religion suggestions when typing
-  const input = document.getElementById('globalSearch');
-  const dropdown = document.getElementById('searchDropdown');
+const names = [
+  // ── BOYS ──
+  {name:"Aarav",dev:"आरव",gender:"boy",meaning:"Peaceful, calm, melodious sound",full:"From Sanskrit meaning peaceful and calm. Also refers to a pleasing sound or melody. One of the most popular Hindu baby boy names in India and the diaspora.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Mesh (Aries)",nakshatra:"Ashwini",num:1,numdesc:"Leadership and new beginnings. Aarav-named boys are natural pioneers full of fresh energy.",vedic:"Connected to the Vedic concept of 'rava' — sound and vibration, which is the basis of all creation in Hindu philosophy.",famous:["Aarav Shah (son of Akshay Kumar & Twinkle Khanna)","Most popular Hindu boy name in India 2015–2024"],translations:[{lang:"Hindi",name:"Aarav",native:"आरव"},{lang:"Tamil",name:"Arav",native:"அரவ்"},{lang:"Telugu",name:"Aarav",native:"ఆరవ్"},{lang:"Bengali",name:"Aarav",native:"আরাভ"}]},
 
-  input.addEventListener('focus', () => {
-    if (input.value.length === 0) dropdown.classList.add('open');
-  });
-  input.addEventListener('input', () => {
-    dropdown.classList.toggle('open', input.value.length >= 0);
-  });
-  document.addEventListener('click', e => {
-    if (!e.target.closest('.search-outer')) dropdown.classList.remove('open');
-  });
+  {name:"Arjun",dev:"अर्जुन",gender:"boy",meaning:"Bright, shining white, silver",full:"Name of the greatest warrior-hero of the Mahabharata, one of the five Pandava brothers. He received the Bhagavad Gita directly from Lord Krishna on the battlefield of Kurukshetra.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Mithun (Gemini)",nakshatra:"Punarvasu",num:9,numdesc:"Compassion, wisdom, and universal love. Arjun-named boys are skilled, devoted, and deeply principled.",vedic:"Arjuna is the central character of the Bhagavad Gita. Lord Krishna chose him as the recipient of divine wisdom. His name means bright and pure like silver.",famous:["Arjuna (hero of Mahabharata, recipient of Bhagavad Gita)","Arjun Kapoor (Bollywood actor)","Arjun Tendulkar (cricketer)"],translations:[{lang:"Hindi",name:"Arjun",native:"अर्जुन"},{lang:"Tamil",name:"Arjunan",native:"அர்ஜுனன்"},{lang:"Telugu",name:"Arjun",native:"అర్జున్"},{lang:"Bengali",name:"Arjun",native:"অর্জুন"}]},
 
-  // Animate religion cards on scroll
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        entry.target.style.animationDelay = (i * 0.08) + 's';
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+  {name:"Krishna",dev:"कृष्ण",gender:"boy",meaning:"Dark, all-attractive, the one who captivates all",full:"Name of the eighth avatar of Lord Vishnu, one of the most beloved deities in Hinduism. Krishna is the speaker of the Bhagavad Gita, the cowherd god of Vrindavan, and the divine statesman of Dwarka.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Vrishabha (Taurus)",nakshatra:"Rohini",num:8,numdesc:"Power, authority, and material mastery combined with spiritual depth. Krishna-named boys are charismatic and multi-talented.",vedic:"The Bhagavad Gita (Song of God) was spoken by Krishna to Arjuna. He is the central deity of Vaishnavism and is worshipped across India and worldwide.",famous:["Lord Krishna (8th avatar of Vishnu, speaker of Bhagavad Gita)","Krishna Shroff (fitness entrepreneur)","Krishna Shah (filmmaker)"],translations:[{lang:"Hindi",name:"Krishna",native:"कृष्ण"},{lang:"Tamil",name:"Kirushnan",native:"கிருஷ்ணன்"},{lang:"Telugu",name:"Krishna",native:"కృష్ణ"},{lang:"Bengali",name:"Krishna",native:"কৃষ্ণ"}]},
 
-  document.querySelectorAll('.rel-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity .5s ease, transform .5s ease';
-    observer.observe(card);
+  {name:"Shiva",dev:"शिव",gender:"boy",meaning:"Auspicious, pure, the benevolent one",full:"Name of the supreme being in Shaivism and one of the principal deities of the Hindu Trimurti (Trinity). Shiva is the destroyer and transformer, Lord of meditation, and the cosmic dancer Nataraja.",origin:"Sanskrit",lang:"Sanskrit",deity:"Shiva",rashi:"Makar (Capricorn)",nakshatra:"Shravana",num:5,numdesc:"Change, freedom, and transformation. Shiva-named boys have a powerful transformative energy and deep spirituality.",vedic:"Shiva is worshipped through the Shiva Purana and countless Vedic hymns. The Maha Mrityunjaya Mantra is dedicated to Shiva. He is the Lord of Kailash and master of all yogis.",famous:["Lord Shiva (one of the principal Hindu deities, the destroyer)","Shiv Nadar (HCL Technologies founder, billionaire)","Shiva Ayyadurai (inventor)"],translations:[{lang:"Hindi",name:"Shiva",native:"शिव"},{lang:"Tamil",name:"Sivam",native:"சிவம்"},{lang:"Telugu",name:"Shiva",native:"శివ"},{lang:"Bengali",name:"Shib",native:"শিব"}]},
+
+  {name:"Rohan",dev:"रोहन",gender:"boy",meaning:"Ascending, growing, one who climbs upward",full:"From Sanskrit meaning ascending or growing upward. Symbolizes progress, ambition, and continuous growth in life. A popular name across India and the Indian diaspora worldwide.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Vrishabha (Taurus)",nakshatra:"Rohini",num:2,numdesc:"Cooperation, intuition, and balance. Rohan-named boys are diplomatic, sensitive, and natural peacemakers.",vedic:"Connected to Rohini Nakshatra — one of the most auspicious birth stars in Vedic astrology, associated with growth and fertility.",famous:["Rohan Bopanna (Indian tennis player, doubles specialist)","Rohan Gavaskar (cricketer, son of Sunil Gavaskar)"],translations:[{lang:"Hindi",name:"Rohan",native:"रोहन"},{lang:"Tamil",name:"Rohan",native:"ரோகன்"},{lang:"Telugu",name:"Rohan",native:"రోహన్"},{lang:"Bengali",name:"Rohan",native:"রোহান"}]},
+
+  {name:"Vivaan",dev:"विवान",gender:"boy",meaning:"Full of life, rays of the morning sun",full:"A beautiful Sanskrit-derived name meaning one who is full of life and vibrant energy, like the first rays of the morning sun. One of India's top trending boy names since 2018.",origin:"Sanskrit",lang:"Sanskrit",deity:"Surya",rashi:"Simha (Leo)",nakshatra:"Magha",num:3,numdesc:"Joy, creativity, and self-expression. Vivaan-named boys are radiant, social, and bring sunshine wherever they go.",vedic:"Connected to Lord Surya (the Sun God) whose rays — called 'rashmi' — are compared to the energy and vitality of this name.",famous:["One of the top 5 Hindu baby boy names in India since 2018"],translations:[{lang:"Hindi",name:"Vivaan",native:"विवान"},{lang:"Tamil",name:"Vivaan",native:"விவான்"},{lang:"Telugu",name:"Vivaan",native:"వివాన్"},{lang:"Bengali",name:"Vivaan",native:"বিভান"}]},
+
+  {name:"Dhruv",dev:"ध्रुव",gender:"boy",meaning:"Pole star, immovable, constant",full:"Dhruva was a young devotee of Lord Vishnu who, through intense meditation, became the pole star — Dhruva Tara — forever fixed in the sky. Symbolizes steadiness, devotion, and unshakeable determination.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Vrishabha (Taurus)",nakshatra:"Krittika",num:4,numdesc:"Stability, discipline, and groundedness. Dhruv-named boys are reliable, patient, and deeply committed to their goals.",vedic:"The story of Dhruva is told in the Vishnu Purana and Bhagavata Purana. As a young child he performed tapas (austerities) so powerful that Vishnu appeared before him personally.",famous:["Dhruva (Puranic devotee who became the pole star)","Dhruv Rathee (popular Indian YouTuber & activist)","Dhruv Vikram (Tamil actor)"],translations:[{lang:"Hindi",name:"Dhruv",native:"ध्रुव"},{lang:"Tamil",name:"Tiruvan",native:"திருவன்"},{lang:"Telugu",name:"Dhruv",native:"ధ్రువ"},{lang:"Bengali",name:"Dhruv",native:"ধ্রুব"}]},
+
+  {name:"Reyansh",dev:"रेयांश",gender:"boy",meaning:"Ray of Lord Vishnu's light, part of the divine",full:"A modern Sanskrit-inspired name meaning a ray or fragment of the divine light of Lord Vishnu. Combines 'ray' (light beam) and 'ansh' (part of). The #1 baby boy name in India for multiple years.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Meen (Pisces)",nakshatra:"Revati",num:9,numdesc:"Compassion and universal love. Reyansh-named boys are generous, spiritual, and naturally draw others to them.",vedic:"Derived from the concept that every living being is an 'ansh' (particle) of the divine Brahman. This Vedantic concept appears in the Bhagavad Gita (15:7).",famous:["#1 Hindu baby boy name in India 2022, 2023, and 2024 rankings"],translations:[{lang:"Hindi",name:"Reyansh",native:"रेयांश"},{lang:"Tamil",name:"Reyansh",native:"ரேயன்ஷ்"},{lang:"Telugu",name:"Reyansh",native:"రేయాన్ష్"},{lang:"Bengali",name:"Reyansh",native:"রেয়ানশ"}]},
+
+  {name:"Parth",dev:"पार्थ",gender:"boy",meaning:"Son of Pritha, son of the earth",full:"Another name for Arjuna, the Pandava hero of the Mahabharata. Partha means son of Pritha (another name for Kunti, his mother). It is a royal and warrior name with deep spiritual significance.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Kanya (Virgo)",nakshatra:"Chitra",num:7,numdesc:"Wisdom, introspection, and spiritual depth. Parth-named boys are philosophical, skilled, and seek higher meaning.",vedic:"Lord Krishna addresses Arjuna as 'Partha' many times in the Bhagavad Gita. The name carries the full weight of the divine dialogue between guru and disciple.",famous:["Arjuna / Partha (hero of Mahabharata)","Parth Samthaan (Indian television actor)"],translations:[{lang:"Hindi",name:"Parth",native:"पार्थ"},{lang:"Tamil",name:"Parthan",native:"பார்த்தன்"},{lang:"Telugu",name:"Parth",native:"పార్థ్"},{lang:"Bengali",name:"Partha",native:"পার্থ"}]},
+
+  {name:"Ishaan",dev:"ईशान",gender:"boy",meaning:"Sun, northeast direction, Lord Shiva",full:"One of the names of Lord Shiva, specifically in his solar and directional aspect. Ishana represents the northeast quarter, the most sacred direction in Vastu Shastra. Also means the life-giving sun.",origin:"Sanskrit",lang:"Sanskrit",deity:"Shiva",rashi:"Makar (Capricorn)",nakshatra:"Uttara Ashadha",num:5,numdesc:"Dynamic, freedom-loving, and versatile. Ishaan-named boys are spirited, multi-talented, and constantly evolving.",vedic:"In the Rig Veda, Ishana is a name for Rudra (Shiva) meaning the one who rules. The northeast direction called Ishaan Kona is considered most auspicious in Hindu Vastu.",famous:["Ishaan Khatter (Bollywood actor, Mission Mangal)","Ishaan Kishan (Indian cricketer, T20 specialist)"],translations:[{lang:"Hindi",name:"Ishaan",native:"ईशान"},{lang:"Tamil",name:"Ishan",native:"ஈஷான்"},{lang:"Telugu",name:"Ishaan",native:"ఈషాన్"},{lang:"Bengali",name:"Ishan",native:"ঈশান"}]},
+
+  {name:"Yash",dev:"यश",gender:"boy",meaning:"Fame, glory, success, honor",full:"From Sanskrit meaning fame, glory, and success. A short, powerful name that carries enormous positive energy. Widely used across all Hindu communities in India and abroad.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Dhanu (Sagittarius)",nakshatra:"Moola",num:8,numdesc:"Ambition and achievement. Yash-named boys are driven to succeed and often achieve widespread recognition.",vedic:"Yasha is praised throughout Vedic literature as one of the highest virtues — to live a life worthy of fame and to leave a legacy of good deeds.",famous:["Yash (KGF actor, one of India's biggest film stars)","Yash Chopra (legendary Bollywood director)","Yash Raj Films (India's most prestigious production house)"],translations:[{lang:"Hindi",name:"Yash",native:"यश"},{lang:"Tamil",name:"Yash",native:"யாஷ்"},{lang:"Telugu",name:"Yash",native:"యాష్"},{lang:"Bengali",name:"Jash",native:"যশ"}]},
+
+  {name:"Surya",dev:"सूर्य",gender:"boy",meaning:"Sun, the solar deity, source of light",full:"The name of the Hindu sun god, one of the Adityas. Surya represents the life-giving energy of the universe, vitality, and divine illumination. He drives his golden chariot across the sky pulled by seven horses.",origin:"Sanskrit",lang:"Sanskrit",deity:"Surya",rashi:"Simha (Leo)",nakshatra:"Uttara Phalguni",num:1,numdesc:"Leadership and radiant energy. Surya-named boys radiate confidence, warmth, and natural authority.",vedic:"The Surya Namaskar (Sun Salutation) is performed in his honor daily. The Gayatri Mantra is a prayer to the Sun — the supreme light of consciousness.",famous:["Lord Surya (Hindu sun deity, one of the Adityas)","Suriya (Tamil superstar, one of South India's biggest actors)","Surya Kumar Yadav (Indian cricketer)"],translations:[{lang:"Hindi",name:"Surya",native:"सूर्य"},{lang:"Tamil",name:"Suriyan",native:"சூரியன்"},{lang:"Telugu",name:"Surya",native:"సూర్య"},{lang:"Bengali",name:"Surya",native:"সূর্য"}]},
+
+  {name:"Kabir",dev:"कबीर",gender:"boy",meaning:"Great, powerful, the supreme one",full:"A name of Arabic origin deeply embedded in Hindu culture through the 15th century saint-poet Kabir Das, one of India's greatest mystics. He bridged Hinduism and Islam and wrote beautiful dohas (couplets) about the divine.",origin:"Arabic/Hindi",lang:"Hindi",deity:"Universal",rashi:"Vrischik (Scorpio)",nakshatra:"Jyeshtha",num:6,numdesc:"Nurturing and wisdom. Kabir-named boys often become teachers, spiritual guides, and community pillars.",vedic:"Kabir Das (1440–1518) is revered equally by Hindus and Muslims. His poetry rejects religious divisions: 'Ram Rahim ek hai, naam dharayo do' — Ram and Rahim are one, given two different names.",famous:["Sant Kabir Das (15th century mystic poet, revered by Hindus & Muslims)","Kabir Khan (Indian film director)","Kabir Bedi (actor)"],translations:[{lang:"Hindi",name:"Kabir",native:"कबीर"},{lang:"Tamil",name:"Kabir",native:"கபீர்"},{lang:"Telugu",name:"Kabir",native:"కబీర్"},{lang:"Bengali",name:"Kabir",native:"কবীর"}]},
+
+  // ── GIRLS ──
+  {name:"Aadhya",dev:"आद्या",gender:"girl",meaning:"First power, primordial energy, original",full:"A name for Goddess Durga in her original primordial form — the Adishakti, the first power of the universe from which all creation emerged. One of India's top baby girl names.",origin:"Sanskrit",lang:"Sanskrit",deity:"Durga",rashi:"Vrishabha (Taurus)",nakshatra:"Rohini",num:1,numdesc:"Leadership and originality. Aadhya-named girls are strong, determined, and carry a commanding presence.",vedic:"In the Devi Mahatmyam (Durga Saptashati), the goddess is called Adya — the primordial one, existing before all creation. She is the source of all shakti (divine feminine power).",famous:["Top Hindu baby girl name in India 2021, 2022, 2023, and 2024","Aadhya Anand (child actress)"],translations:[{lang:"Hindi",name:"Aadhya",native:"आद्या"},{lang:"Tamil",name:"Aadiya",native:"ஆதியா"},{lang:"Telugu",name:"Aadhya",native:"ఆద్య"},{lang:"Bengali",name:"Adya",native:"আদ্যা"}]},
+
+  {name:"Ananya",dev:"अनन्या",gender:"girl",meaning:"Unique, incomparable, without equal",full:"From Sanskrit meaning one who has no equal, who is unique and matchless. A girl named Ananya is one of a kind — incomparable in beauty, intelligence, and character.",origin:"Sanskrit",lang:"Sanskrit",deity:"Durga",rashi:"Kanya (Virgo)",nakshatra:"Hasta",num:5,numdesc:"Freedom, adventure, and versatility. Ananya-named girls are communicative, dynamic, and truly one of a kind.",vedic:"In the Bhagavad Gita (9:22), Krishna promises to personally provide for those who worship him 'ananyah' — exclusively, without deviation. The concept of ananya-bhakti is pure, undivided devotion.",famous:["Ananya Panday (Bollywood actress)","Ananya Birla (singer and mental health advocate)"],translations:[{lang:"Hindi",name:"Ananya",native:"अनन्या"},{lang:"Tamil",name:"Ananya",native:"அனன்யா"},{lang:"Telugu",name:"Ananya",native:"అనన్య"},{lang:"Bengali",name:"Ananya",native:"অনন্যা"}]},
+
+  {name:"Saanvi",dev:"सांवी",gender:"girl",meaning:"Goddess Lakshmi, one who will be followed",full:"One of the names of Goddess Lakshmi — the goddess of wealth, fortune, and beauty. Saanvi means one who is worthy of being followed and emulated.",origin:"Sanskrit",lang:"Sanskrit",deity:"Lakshmi",rashi:"Vrischik (Scorpio)",nakshatra:"Anuradha",num:7,numdesc:"Wisdom, introspection, and spiritual depth. Saanvi-named girls are thoughtful, graceful, and deeply spiritual.",vedic:"Lakshmi (Saanvi) is worshipped through the Shri Sukta of the Rig Veda — one of the oldest hymns to the divine feminine. She emerged from the cosmic ocean during the churning of the sea.",famous:["Top Hindu baby girl name across India 2015–2024","Saanvi is one of the top 3 names given to girls in Maharashtra"],translations:[{lang:"Hindi",name:"Saanvi",native:"सांवी"},{lang:"Tamil",name:"Saanvi",native:"சாந்வி"},{lang:"Telugu",name:"Saanvi",native:"సాన్వి"},{lang:"Bengali",name:"Saanvi",native:"সাঁওই"}]},
+
+  {name:"Kavya",dev:"कव्या",gender:"girl",meaning:"Poetry, poetic beauty, wise like a sage",full:"From Sanskrit 'kavya' meaning poetry or a poem. A girl named Kavya is as beautiful and expressive as a poem. Also means one who is as wise and eloquent as a great poet.",origin:"Sanskrit",lang:"Sanskrit",deity:"Saraswati",rashi:"Meen (Pisces)",nakshatra:"Revati",num:6,numdesc:"Love, harmony, and creativity. Kavya-named girls are deeply artistic, warm, and family-centered.",vedic:"Poetry (Kavya) is one of the highest arts in Sanskrit tradition. The Ramayana and Mahabharata are both forms of Kavya. Goddess Saraswati presides over all poetic expression.",famous:["Kavya Madhavan (renowned Malayalam actress)","Kavya Maran (CEO of Sunrisers Hyderabad IPL team)"],translations:[{lang:"Hindi",name:"Kavya",native:"काव्या"},{lang:"Tamil",name:"Kavya",native:"காவ்யா"},{lang:"Telugu",name:"Kavya",native:"కావ్య"},{lang:"Bengali",name:"Kabya",native:"কাব্য"}]},
+
+  {name:"Aditi",dev:"अदिति",gender:"girl",meaning:"Free, boundless, infinite, limitless",full:"Aditi is the Vedic mother goddess — the goddess of the infinite sky and limitless freedom. She is the mother of the Adityas, the solar deities, including Surya (the sun). She represents the infinite and the eternal.",origin:"Sanskrit",lang:"Sanskrit",deity:"Universal",rashi:"Dhanu (Sagittarius)",nakshatra:"Mula",num:8,numdesc:"Power and ambition. Aditi-named girls are strong, limitless in their potential, and natural leaders.",vedic:"Aditi is mentioned in the Rig Veda as the mother of all gods. She represents the infinite sky — boundless consciousness. 'Aditi is the sky, Aditi is the air, Aditi is all gods' (Rig Veda 1.89.10).",famous:["Goddess Aditi (Vedic mother of the gods)","Aditi Rao Hydari (Bollywood actress)","Aditi Chauhan (Indian women's football goalkeeper)"],translations:[{lang:"Hindi",name:"Aditi",native:"अदिति"},{lang:"Tamil",name:"Aditi",native:"அதிதி"},{lang:"Telugu",name:"Aditi",native:"అదితి"},{lang:"Bengali",name:"Aditi",native:"অদিতি"}]},
+
+  {name:"Priya",dev:"प्रिया",gender:"girl",meaning:"Beloved, dear, loved one",full:"One of the most popular Sanskrit names for girls across all of India and the diaspora. Priya means beloved or dear. It is also one of the names of Goddess Parvati, the beloved consort of Lord Shiva.",origin:"Sanskrit",lang:"Sanskrit",deity:"Lakshmi",rashi:"Mithun (Gemini)",nakshatra:"Ardra",num:2,numdesc:"Harmony, intuition, and sensitivity. Priya-named girls are deeply empathetic, warm, and naturally beloved by all.",vedic:"The word 'priya' appears throughout Vedic literature as an expression of love and devotion. In the Bhagavad Gita (12:14-20), Krishna lists 'priya' among the qualities of his dearest devotees.",famous:["Priyanka Chopra Jonas (Bollywood actress & global star)","Priya Dutt (Indian politician)","Priya Mani (South Indian actress)"],translations:[{lang:"Hindi",name:"Priya",native:"प्रिया"},{lang:"Tamil",name:"Priya",native:"ப்ரியா"},{lang:"Telugu",name:"Priya",native:"ప్రియ"},{lang:"Bengali",name:"Priya",native:"প্রিয়া"}]},
+
+  {name:"Meera",dev:"मीरा",gender:"girl",meaning:"Ocean, prosperous, devoted, the mystic",full:"The name of the legendary 16th-century Rajput princess Mirabai, one of the greatest bhakti saints of Hinduism. She was a passionate devotee of Lord Krishna and composed thousands of devotional poems (bhajans) that are still sung today.",origin:"Sanskrit",lang:"Sanskrit",deity:"Vishnu",rashi:"Tula (Libra)",nakshatra:"Vishakha",num:9,numdesc:"Compassion and spiritual devotion. Meera-named girls have deep emotional and spiritual lives and inspire others.",vedic:"Mirabai's bhajans are among the most beloved devotional poetry in Hindi literature. She exemplifies madhurya-bhakti — loving devotion to Krishna as the supreme beloved.",famous:["Mirabai (16th century bhakti saint and poet, devoted to Krishna)","Meera Jasmine (Malayalam actress)","Mirabai Chanu (Indian Olympic weightlifting champion)"],translations:[{lang:"Hindi",name:"Meera",native:"मीरा"},{lang:"Tamil",name:"Meera",native:"மீரா"},{lang:"Telugu",name:"Meera",native:"మీర"},{lang:"Bengali",name:"Mira",native:"মীরা"}]},
+
+  {name:"Diya",dev:"दिया",gender:"girl",meaning:"Lamp, divine light, a small oil lamp",full:"From Sanskrit meaning a small oil lamp or flame. The diya symbolizes the triumph of light over darkness, knowledge over ignorance, and hope over despair. Lighting diyas is central to the festival of Diwali.",origin:"Sanskrit",lang:"Sanskrit",deity:"Lakshmi",rashi:"Simha (Leo)",nakshatra:"Poorva Phalguni",num:4,numdesc:"Stability, warmth, and reliability. Diya-named girls bring light and steadiness to all around them.",vedic:"The diya (lamp) is one of the five elements (Panchadeep) used in Hindu worship. It represents the element of fire — Agni — and the light of divine consciousness dispelling ignorance.",famous:["Diya Mirza (actress & UN Environment Programme Goodwill Ambassador)","Diya Kumari (Princess of Jaipur, politician)"],translations:[{lang:"Hindi",name:"Diya",native:"दिया"},{lang:"Tamil",name:"Deepa",native:"தீபா"},{lang:"Telugu",name:"Diya",native:"దీయ"},{lang:"Bengali",name:"Diya",native:"দীয়া"}]},
+
+  {name:"Tara",dev:"तारा",gender:"girl",meaning:"Star, savior, protector, one who ferries across",full:"From Sanskrit meaning a star and also a savior who helps souls cross the ocean of suffering. Tara is a goddess in both Hinduism and Buddhism, associated with compassion and liberation.",origin:"Sanskrit",lang:"Sanskrit",deity:"Durga",rashi:"Vrischik (Scorpio)",nakshatra:"Anuradha",num:5,numdesc:"Freedom and versatility. Tara-named girls are bold, bright, and independent — they light the way for others.",vedic:"Goddess Tara is one of the ten Mahavidyas — the ten forms of the divine mother Shakti. She is the goddess of protection and guidance, helping devotees cross difficult times.",famous:["Goddess Tara (Hindu goddess, one of the ten Mahavidyas)","Tara Sutaria (Bollywood actress)","Tara Singh (Punjabi cultural icon)"],translations:[{lang:"Hindi",name:"Tara",native:"तारा"},{lang:"Tamil",name:"Tara",native:"தாரா"},{lang:"Telugu",name:"Tara",native:"తార"},{lang:"Bengali",name:"Tara",native:"তারা"}]},
+
+  {name:"Navya",dev:"नव्या",gender:"girl",meaning:"New, young, fresh, worth praising",full:"From Sanskrit meaning new or young. Also interpreted as praiseworthy — one worthy of praise. A fresh modern name with deep classical roots. Very popular across Maharashtra, Karnataka, and Tamil Nadu.",origin:"Sanskrit",lang:"Sanskrit",deity:"Saraswati",rashi:"Meen (Pisces)",nakshatra:"Purva Bhadrapada",num:2,numdesc:"Sensitivity and intuition. Navya-named girls are deeply caring, creative partners and friends.",vedic:"The concept of nava (new) is celebrated in Hindu tradition through festivals like Nav Ratri (nine nights), Nav Varsha (New Year), and the idea of constant renewal in the cosmic cycle.",famous:["Navya Naveli Nanda (entrepreneur, granddaughter of Amitabh Bachchan)","Navya Nair (Malayalam actress)"],translations:[{lang:"Hindi",name:"Navya",native:"नव्या"},{lang:"Tamil",name:"Navya",native:"நவ்யா"},{lang:"Telugu",name:"Navya",native:"నవ్య"},{lang:"Bengali",name:"Navya",native:"নব্যা"}]},
+
+  {name:"Lakshmi",dev:"लक्ष्मी",gender:"girl",meaning:"Good fortune, prosperity, beauty, divine grace",full:"Name of the Hindu goddess of wealth, fortune, prosperity, and beauty — one of the principal goddesses of Vaishnavism and the consort of Lord Vishnu. She is worshipped especially during Diwali.",origin:"Sanskrit",lang:"Sanskrit",deity:"Lakshmi",rashi:"Vrishabha (Taurus)",nakshatra:"Bharani",num:6,numdesc:"Love and abundance. Lakshmi-named girls radiate generosity, grace, and attract prosperity naturally.",vedic:"The Shri Sukta of the Rig Veda is the oldest hymn to Lakshmi. She emerged from the cosmic ocean during the churning of the sea, seated on a lotus, adorned with gold.",famous:["Goddess Lakshmi (Hindu goddess of wealth, consort of Vishnu)","Lakshmi Manchu (actress & producer)","Lakshmi Sahgal (Indian freedom fighter & doctor)"],translations:[{lang:"Hindi",name:"Lakshmi",native:"लक्ष्मी"},{lang:"Tamil",name:"Lakshmi",native:"லட்சுமி"},{lang:"Telugu",name:"Lakshmi",native:"లక్ష్మి"},{lang:"Bengali",name:"Lokkhi",native:"লক্ষ্মী"}]},
+
+  {name:"Simran",dev:"सिमरन",gender:"girl",meaning:"Continuous meditation, remembrance of God",full:"From Punjabi and Sanskrit meaning continuous remembrance of the divine — a practice of keeping God always in one's consciousness. Popular among both Hindu and Sikh communities across Punjab and beyond.",origin:"Sanskrit/Punjabi",lang:"Hindi",deity:"Vishnu",rashi:"Simha (Leo)",nakshatra:"Uttara Phalguni",num:3,numdesc:"Creativity and charisma. Simran-named girls are expressive, warm, and have an enduring spiritual practice.",vedic:"Simran (Smaran in Sanskrit) is one of the nine forms of bhakti (devotion) — continuously remembering God's name and qualities. It is central to both Vaishnava and Sikh spiritual practice.",famous:["Made iconic by the character in Dilwale Dulhania Le Jayenge (1995)","Simran (Tamil actress)","Simran Kaur Mundi (Miss Universe India 2008)"],translations:[{lang:"Hindi",name:"Simran",native:"सिमरन"},{lang:"Tamil",name:"Simran",native:"சிம்ரன்"},{lang:"Telugu",name:"Simran",native:"సిమ్రన్"},{lang:"Bengali",name:"Simran",native:"সিমরন"}]},
+];
+
+let activeGender = 'all';
+let activeLang   = 'all';
+let activeDeity  = 'all';
+let activeLetter = 'all';
+let searchQuery  = '';
+
+function filterNames() {
+  return names.filter(n => {
+    const q = searchQuery.toLowerCase();
+    const matchSearch = !q || n.name.toLowerCase().includes(q) || n.meaning.toLowerCase().includes(q) || n.full.toLowerCase().includes(q) || n.dev.includes(q);
+    const matchGender = activeGender === 'all' || n.gender === activeGender;
+    const matchLang   = activeLang === 'all' || n.lang === activeLang;
+    const matchDeity  = activeDeity === 'all' || n.deity === activeDeity;
+    const matchLetter = activeLetter === 'all' || n.name.startsWith(activeLetter);
+    return matchSearch && matchGender && matchLang && matchDeity && matchLetter;
   });
+}
 
-  // Add visible class handling
-  const style = document.createElement('style');
-  style.textContent = '.rel-card.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-  document.head.appendChild(style);
+function renderGrid() {
+  const filtered = filterNames();
+  const grid  = document.getElementById('nameGrid');
+  const empty = document.getElementById('emptyState');
+  const count = document.getElementById('resultCount');
+  count.textContent = `Showing ${filtered.length} name${filtered.length !== 1 ? 's' : ''}`;
+  if (!filtered.length) { grid.innerHTML = ''; empty.style.display = 'block'; return; }
+  empty.style.display = 'none';
+  grid.innerHTML = filtered.map(n => `
+    <div class="name-card" onclick="openDetail('${n.name}','${n.gender}')">
+      <div class="card-top">
+        <span class="card-devanagari">${n.dev}</span>
+        <div class="card-badges">
+          <span class="card-lang-badge">${n.lang}</span>
+          <span class="gender-badge ${n.gender === 'boy' ? 'gender-boy' : 'gender-girl'}">${n.gender === 'boy' ? 'Boy' : 'Girl'}</span>
+        </div>
+      </div>
+      <div class="card-name">${n.name}</div>
+      <div class="card-meaning">${n.meaning}</div>
+      <div class="card-tags">
+        <span class="card-tag">${n.rashi}</span>
+        <span class="card-tag">${n.origin}</span>
+        <span class="card-tag">${n.deity}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setGender(g, btn) { activeGender = g; document.querySelectorAll('[onclick*="setGender"]').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderGrid(); }
+function setLang(l, btn)   { activeLang   = l; document.querySelectorAll('[onclick*="setLang"]').forEach(b => b.classList.remove('active'));   btn.classList.add('active'); renderGrid(); }
+function setDeity(d, btn)  { activeDeity  = d; document.querySelectorAll('[onclick*="setDeity"]').forEach(b => b.classList.remove('active'));  btn.classList.add('active'); renderGrid(); }
+function setLetter(val)    { activeLetter = val; renderGrid(); }
+
+document.getElementById('searchInput').addEventListener('input', e => { searchQuery = e.target.value; renderGrid(); });
+
+function openDetail(name, gender) {
+  const n = names.find(x => x.name === name && x.gender === gender);
+  if (!n) return;
+  document.getElementById('dp-dev').textContent      = n.dev;
+  document.getElementById('dp-name').textContent     = n.name;
+  document.getElementById('dp-meaning').textContent  = n.meaning;
+  document.getElementById('dp-gender').textContent   = n.gender === 'boy' ? '👦 Boy' : '👧 Girl';
+  document.getElementById('dp-origin').textContent   = n.origin;
+  document.getElementById('dp-rashi').textContent    = n.rashi;
+  document.getElementById('dp-nakshatra').textContent = n.nakshatra;
+  document.getElementById('dp-vedic').textContent    = n.vedic;
+  document.getElementById('dp-fullmeaning').textContent = n.full;
+  document.getElementById('dp-deity').textContent    = n.deity + ' — ' + n.vedic;
+  document.getElementById('dp-num').textContent      = n.num;
+  document.getElementById('dp-numdesc').textContent  = n.numdesc;
+  document.getElementById('dp-famous').innerHTML     = n.famous.map(f => `<li><span class="famous-dot"></span>${f}</li>`).join('');
+  document.getElementById('dp-translations').innerHTML = n.translations.map(t => `
+    <div class="lang-trans-row">
+      <span class="lt-lang">${t.lang}</span>
+      <span class="lt-name">${t.name}</span>
+      <span class="lt-native">${t.native}</span>
+    </div>
+  `).join('');
+  document.getElementById('detailPanel').classList.add('open');
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDetail() {
+  document.getElementById('detailPanel').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+renderGrid();
 </script>
-
 </body>
 </html>
